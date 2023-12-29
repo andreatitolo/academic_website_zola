@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div id="profile">
+          <picture>Profile picture</picture>
+          <div>
+            <h2>Author</h2>
+            <h3>Role</h3>
+            <h3>Institution</h3>
+          </div>
+          <ul class="network">
+            <li class="network-item">Mail</li>
+            <li class="network-item">Github</li>
+            <li class="network-item">Codeberg</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-8">
+        <div>
+          <p>I am a researcher at the University of Turin (South Western Asia Archaeology). My research interests include Settlement Pattern Analysis, Remote Sensing, GIS, and mapping</p>
+          <p>During my Ph.D. I analyzed Iron Age settlement patterns along the Euphrates river in ancient Mesopotamia. I used a landscape archaeology approach, also integrating geomorphology, remote sensing, quantitative and spatial analyses.</p>
+          <p>Use the menu at the top to navigate between publications, talks, etc.</p>
+          <div id="background">
+            <div id="interests">
+              <h3>Interests</h3>
+              <ul>
+                <li>Programming</li>
+                <li>GIS</li>
+                <li>Mapping</li>
+                <li>Remote Sensing</li>
+              </ul>
+            </div>
+            <div id="education">
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <div>
+                    <p>PhD in Near Eastern Archaeology, 2019</p>
+                    <p>Sapienza University of Rome</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>MA in Near Eastern Archaeology, 2016</p>
+                    <p>Sapienza University of Rome</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>BA in Archaeology, 2014</p>
+                    <p>Sapienza University of Rome</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="title">
+    This is my blog made with Zola.
+  </h1>
+  <p>Click <a href="{{ get_url(path='@/blog/_index.md') }}">here</a> to see my posts.</p>
+{% endblock content %}
