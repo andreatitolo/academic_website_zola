@@ -27,6 +27,12 @@ feed_filename = "atom.xml"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+taxonomies = [
+    { name = "publication", feed = true, paginate_by = 10 },
+    { name = "taks", feed = true, paginate_by = 10 },
+]
+
+
 [slugify]
 # Check if this is actually needed or not
 paths_keep_dates = true
@@ -46,6 +52,8 @@ institution = "University of Turin"
 role = "Post-Doctoral Research Associate"
 email = "andrea.titolo@unito.it"
 
+footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
 social_buttons = [
     {link = "mailto:$EMAIL_ADDRESS", name = "Mail"},
     {link = "https://github.com/andreatitolo", name = "Github"},
@@ -55,15 +63,16 @@ social_buttons = [
     {link = "/cv", name = "CV"},
 ]
 
+# trailing slashes are needed for the aria-current page in header.html to work
 navbar_items = [
-    { url = "$BASE_URL/", name = "Home" },
-    { url = "$BASE_URL/publications", name = "Publications" },
-    { url = "$BASE_URL/talks", name = "Talks" },
-    { url = "$BASE_URL/teaching", name = "Teaching" },
-    { url = "$BASE_URL/contact", name = "Contact" },
-    { url = "$BASE_URL/cv", name = "CV" },
-    { url = "$BASE_URL/search", name = "Search" },
-    { url = "$BASE_URL/more", name = "More.." },
+    { url = "/", name = "Home" },
+    { url = "/publications/", name = "Publications" },
+    { url = "/talks/", name = "Talks" },
+    { url = "/teaching/", name = "Teaching" },
+    { url = "/contact/", name = "Contact" },
+    { url = "/cv/", name = "CV" },
+    { url = "/search/", name = "Search" },
+    { url = "/more/", name = "More.." },
     { url = "https://archaeoramblings.com", name = "Blog" }
 ]
 

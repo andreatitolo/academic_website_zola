@@ -9,6 +9,7 @@
   <meta name="description" content="{{ config.description }}">
   <link rel="canonical" href="{{ config.base_url }}">
 
+  {% block favicons %}
   {% if config.extra.favicon.webmanifest %}
   <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
   {% endif %}
@@ -24,6 +25,7 @@
   {% if config.extra.favicon.apple_touch_icon %}
   <link href='{{ config.extra.favicon.apple_touch_icon }}' rel="apple-touch-icon" sizes="180x180" />
   {% endif %}
+  {% endblock %}
 
   {% block rss %}
   <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path=" atom.xml", trailing_slash=false) }}">

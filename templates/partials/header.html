@@ -3,8 +3,9 @@
         <ul class="nav">
             {% set menu_items = config.extra.navbar_items -%}
             {% for item in menu_items -%}
-            <li class="nav-item"><a href="{{ item.url | replace(from='$BASE_URL', to=config.base_url) }}">{{ item.name }}</a></li>
+            <li class="nav-item" {%if item.url == current_path %} aria-current="page" {% endif %}><a href="{{ config.base_url ~ item.url  }}">{{ item.name }}</a></li>
             {% endfor -%}
         </ul>
     </nav>
 </header>
+
