@@ -1,15 +1,10 @@
 <header>
     <nav class="menu">
         <ul class="nav">
-            <li class="nav-item"><a href="/">Home</a></li>
-            <li class="nav-item"><a href="/publications">Publications</a></li>
-            <li class="nav-item"><a href="/talks">Talks</a></li>
-            <li class="nav-item"><a href="/teaching">Teaching</a></li>
-            <li class="nav-item"><a href="/contact">Contact</a></li>
-            <li class="nav-item"><a href="/cv">CV</a></li>
-            <li class="nav-item"><a href="/search">Search</a></li>
-            <li class="nav-item"><a href="/more">More..</a></li>
-            <li class="nav-item"><a href="https://archaeoramblings.com">Blog</a></li>
+            {% set menu_items = config.extra.navbar_items -%}
+            {% for item in menu_items -%}
+            <li class="nav-item"><a href="{{ item.url | replace(from='$BASE_URL', to=config.base_url) }}">{{ item.name }}</a></li>
+            {% endfor -%}
         </ul>
     </nav>
 </header>
