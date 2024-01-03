@@ -529,7 +529,6 @@ abbr[title] {
 
 /* 4. Classes –––––––––––––––––––––––––––––––––––––– */
 
-
 /* details/cards */
 
 /* .hint { --cmed: var(--cemph); --clight: var(--cemphbg); background-color: var(--clight); } */
@@ -548,7 +547,6 @@ abbr[title] {
 }
 
 /* grid (flex) */
-
 .container {
   width: 90%;
   max-width: 1200px;
@@ -609,7 +607,7 @@ abbr[title] {
   font-size: 1.3rem;
 }
 
-/* style li inside the interests */
+/* homepage */
 #interests li {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -678,4 +676,89 @@ abbr[title] {
 .institution {
   margin: 0;
   font-size: 0.9rem
+}
+
+/* sections lists */
+.publist {
+  list-style: disc;
+  padding: 0;
+  padding-left: 1.5rem;
+}
+
+.publist-item {
+  margin-bottom: 1.8rem;
+}
+
+.publist-item p {
+  margin-top: 0.5rem;
+}
+
+.publist-item button {
+  font-size: 1rem;
+  margin-right: 0.4rem;
+  padding: 0.35rem 0.5rem;
+}
+
+/* customise only talks dates (inside p) */
+p > .publist-date {
+  font-size: 1.1rem;
+  word-spacing: -0.5px;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+/* pages classes */
+.pub-container {
+  max-width: 760px;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+}
+
+.pub-container button {
+  font-size: 1.1rem;
+  margin-top: .2rem;
+  margin-right: .4rem;
+  margin-bottom: 2rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.pub-metadata {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.3em;
+  font-size: 1.1rem;
+}
+
+.pub-metadata li {
+  margin-bottom: 0.5rem;
+}
+
+.pub-tag {
+  font-style: italic;
+}
+
+.pub-footer {
+  border-top: 1px dashed var(--border);
+  padding: 1.5em 0;
+  font-style: italic;
+  margin: 3.5rem auto;
+}
+
+.next, .previous {
+  font-weight: 600;
+  transition: transform 0.3s ease-out;
+  text-decoration: none;
+}
+
+.next:hover, .previous:hover {
+  color: var(--code);
+  transform: translateX(4px)
+}
+
+.next {
+  float: right;
+}
+
+.previous {
+  float: left;
 }

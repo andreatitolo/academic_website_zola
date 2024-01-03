@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+  {% for year, publications in section.pages | group_by(attribute="year") %}
+      <h2>{{ year }}</h2>
+    <ul class="publist">
+      {% for page in publications %}
+      <li class="publist-item"> {% for author in page.extra.authors %} {{ author }} {% endfor %} - <a href="{{ page.permalink | safe }}">{{ page.title }}</a> - {{ year }}
+        <p>
+          {% if page.extra.url_preprint %}
+            <a href="{{ page.extra.url_preprint }}"><button>Preprint</button></a>
+          {% endif %}
+          {% if page.extra.url_local_pdf %}
+            <a href="{{ page.extra.url_local_pdf }}"><button>Self-archived PDF</button></a>
+          {% endif %}
+          {% if page.extra.url_pdf %}
+            <a href="{{ page.extra.url_pdf }}"><button>PDF</button></a>
+          {% endif %}
+            <a href=""><button>Cite</button></a>
+          {% if page.extra.url_code %}
+            <a href="{{ page.extra.url_code }}"><button>Code</button></a>
+          {% endif %}
+          {% if page.extra.url_dataset %}
+            <a href="{{ page.extra.url_dataset }}"><button>Dataset</button></a>
+          {% endif %}
+          {% if page.extra.url_doi %}
+            <a href="{{ page.extra.url_doi }}"><button>DOI</button></a>
+          {% endif %}
+          {% if page.extra.url_doi %} 
+            <a href="https://www.zotero.org/save?type=doi&q={{ page.extra.url_doi }}"><button><strong>Z</strong> Add to Zotero</button></a> 
+          {% endif %}
+        </p>
+      </li> 
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endblock content %}

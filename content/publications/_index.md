@@ -1,6 +1,7 @@
 +++
 title = "List of publications"
 sort_by = "date"
-template = "blog.html"
-page_template = "blog-page.html"
+template = "publications.html"
+page_template = "publications-page.html"
+generate_feed = true
 +++
