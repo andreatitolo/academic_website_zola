@@ -10,30 +10,30 @@
   <link rel="canonical" href="{{ config.base_url }}">
 
   {% block favicons %}
-  {% if config.extra.favicon.webmanifest %}
-  <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
-  {% endif %}
-  {% if config.extra.favicon.safari_pinned_tab %}
-  <link color="#5bbad5" href='{{ config.extra.favicon.safari_pinned_tab }}' rel="mask-icon" />
-  {% endif %}
-  {% if config.extra.favicon.favicon_16x16 %}
-  <link href='{{ config.extra.favicon.favicon_16x16 }}' rel="icon" sizes="16x16" type="image/png" />
-  {% endif %}
-  {% if config.extra.favicon.favicon_32x32 %}
-  <link href='{{ config.extra.favicon.favicon_32x32 }}' rel="icon" sizes="32x32" type="image/png" />
-  {% endif %}
-  {% if config.extra.favicon.apple_touch_icon %}
-  <link href='{{ config.extra.favicon.apple_touch_icon }}' rel="apple-touch-icon" sizes="180x180" />
-  {% endif %}
+    {% if config.extra.favicon.webmanifest %}
+    <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
+    {% endif %}
+    {% if config.extra.favicon.safari_pinned_tab %}
+    <link color="#5bbad5" href='{{ config.extra.favicon.safari_pinned_tab }}' rel="mask-icon" />
+    {% endif %}
+    {% if config.extra.favicon.favicon_16x16 %}
+    <link href='{{ config.extra.favicon.favicon_16x16 }}' rel="icon" sizes="16x16" type="image/png" />
+    {% endif %}
+    {% if config.extra.favicon.favicon_32x32 %}
+    <link href='{{ config.extra.favicon.favicon_32x32 }}' rel="icon" sizes="32x32" type="image/png" />
+    {% endif %}
+    {% if config.extra.favicon.apple_touch_icon %}
+    <link href='{{ config.extra.favicon.apple_touch_icon }}' rel="apple-touch-icon" sizes="180x180" />
+    {% endif %}
   {% endblock %}
 
   {% block rss %}
-  <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path=" atom.xml", trailing_slash=false) }}">
-  {% endblock %}
-  <meta name="generator" content="Zola v.0.18">
-  {% block css %}
-  <link rel="stylesheet" href="{{ get_url(path="css/style.css", trailing_slash=false) }}">
-  {% endblock css %}
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path=" atom.xml", trailing_slash=false) }}">
+    {% endblock %}
+    <meta name="generator" content="Zola v.0.18">
+    {% block css %}
+    <link rel="stylesheet" href="{{ get_url(path="css/style.css", trailing_slash=false) }}">
+    {% endblock css %}
 </head>
 
 <body>
