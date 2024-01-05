@@ -8,7 +8,7 @@
       <h2>{{ year }}</h2>
     <ul class="publist">
       {% for page in publications %}
-      <li class="publist-item"> {% for author in page.extra.authors %} {{ author }} {% endfor %} - <a href="{{ page.permalink | safe }}">{{ page.title }}</a> - {{ year }}
+      <li class="publist-item"> {% for author in page.extra.authors %} {{ author }} {% endfor %} - <a href="{{ page.permalink | safe }}">{{ page.title }}</a> - <time>{{ year }}</time>
         <p>
           {% if page.extra.url_preprint %}
             <a href="{{ page.extra.url_preprint }}"><button>Preprint</button></a>

@@ -14,8 +14,8 @@
     <div>
         <ul class="pub-metadata">
             <li><strong>Supervisor(s)</strong>: {% for author in page.extra.authors %} {{ author }} {% endfor %} </li>
-            <li><strong>Start Date</strong>: {{ page.extra.start_date }}</li>
-            <li><strong>End Date</strong>: {{ page.extra.end_date }}</li>
+            <li><strong>Start Date</strong>: <time datetime="{{ page.extra.start_date }}">{{ page.extra.start_date }}</time></li>
+            <li><strong>End Date</strong>: <time datetime="{{ page.extra.end_date }}">{{ page.extra.end_date }}</time></li>
             <li><strong>Website</strong>: <a href="{{page.extra.url_website}}">{{page.extra.url_website}}</a> </li>
             <li><strong>Language</strong>: {{page.extra.language}} </li>
             <li><strong>Tags</strong>: {% for tag in page.extra.tags %} <a href="" class="pub-tag">{{ tag }}</a> {% endfor %}</li>

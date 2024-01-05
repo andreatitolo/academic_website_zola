@@ -21,7 +21,7 @@
     <div>
         <ul class="pub-metadata">
             <li><strong>Speaker(s)</strong>: {% for author in page.extra.authors %} {{ author }} {% endfor %} </li>
-            <li><strong>Date</strong>: {{ page.date }}</li>
+            <li><strong>Date</strong>: <time datetime="{{ page.date }}">{{ page.date }}</time></li>
             <li><strong>Event</strong>: {{page.extra.event}} </li>
             <li><strong>Location</strong>: {{page.extra.location}} </li>
             <li><strong>Tags</strong>: {% for tag in page.extra.tags %} <a href="" class="pub-tag">{{ tag }}</a> {% endfor %}</li>
