@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+  {% for year, teaching in section.pages | group_by(attribute="year") %}
+      <h2>{{ year }}</h2>
+    <ul class="publist">
+      {% for page in teaching %}
+      {% set start_date = page.extra.start_date | date(format="%Y-%m") -%}
+      {% set end_date = page.extra.end_date | date(format="%Y-%m") -%}
+      <li class="publist-item"> {% for author in page.extra.authors %} {{ author }} {% endfor %} - <a href="{{ page.permalink | safe }}">{{ page.title }}</a> (<time datetime="{{start_date}}">{{ start_date }}</time> - <time datetime= "{{end_date}}">{{ end_date }}</time>)
+        <p>
+          {% if page.extra.url_website %}
+            <a href="{{ page.extra.url_website }}"><button>Website</button></a>
+          {% endif %}
+          {% if page.extra.url_repo %}
+            <a href="{{ page.extra.url_repo }}"><button>Repository</button></a>
+          {% endif %}
+        </p>
+      </li> 
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endblock content %}

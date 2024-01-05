@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="pub-container">
+    <h1>{{ page.title }}</h1>
+    <div class="pub-buttons">
+        {% if page.extra.url_website %}
+            <a href="{{ page.extra.url_website }}"><button>Website</button></a>
+        {% endif %}
+        {% if page.extra.url_repo %}
+            <a href="{{ page.extra.url_repo }}"><button>Repository</button></a>
+        {% endif %}
+    </div>
+    <div>
+        <ul class="pub-metadata">
+            <li><strong>Supervisor(s)</strong>: {% for author in page.extra.authors %} {{ author }} {% endfor %} </li>
+            <li><strong>Start Date</strong>: {{ page.extra.start_date }}</li>
+            <li><strong>End Date</strong>: {{ page.extra.end_date }}</li>
+            <li><strong>Website</strong>: <a href="{{page.extra.url_website}}">{{page.extra.url_website}}</a> </li>
+            <li><strong>Language</strong>: {{page.extra.language}} </li>
+            <li><strong>Tags</strong>: {% for tag in page.extra.tags %} <a href="" class="pub-tag">{{ tag }}</a> {% endfor %}</li>
+        </ul>
+    </div>
+    <article>
+
+        {% if page.extra.abstract %} 
+            {{ page.extra.abstract }}
+        {% endif %}
+
+        {%- if page.extra.url_slides %}
+            <p class="notice">Click on the <strong>Slides</strong> button above to view the revealjs presentation.</p>
+        {%- endif %}
+
+        {{ page.content | safe }}
+
+        <div class="pub-footer">
+            {% block page_footer %}
+                {% if page.lower or page.higher %}
+                    {% if page.lower %}
+                        <a class="previous" href="{{ page.lower.permalink }}">‹ {{ page.lower.title }}</a>
+                    {% endif %}
+                    {% if page.higher %}
+                        <a class="next" href="{{ page.higher.permalink }}">{{ page.higher.title }} ›</a>
+                    {% endif %}
+                {% endif %}
+            {% endblock page_footer %}
+        </div>
+    </article>
+</div>
+{% endblock content %}
