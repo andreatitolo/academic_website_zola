@@ -25,7 +25,7 @@ generate_feed = true
 feed_filename = "atom.xml"
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 taxonomies = [
     { name = "publication", feed = true, paginate_by = 10 },
@@ -60,7 +60,7 @@ social_buttons = [
     {link = "https://codeberg.org/titoloandrea", name = "Codeberg"},
     {link = "https://orcid.org/0000-0002-7322-8634", name = "ORCID"},
     {link = "https://archaeo.social/web/@andreatitolo", name = "Mastodon"},
-    {link = "/cv", name = "CV"},
+    {link = "https://keyoxide.org/hkp/0CD517A1F847FBC4F8E560A0F489AA7383618137", name = "Keyoxide"}
 ]
 
 # trailing slashes are needed for the aria-current page in header.html to work
