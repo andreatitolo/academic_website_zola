@@ -18,8 +18,10 @@
   --accent-bg: #f5f7ff;
   --text: #443333;
   --text-light: #5b5b5b;
+  --text-dark: #281e1e;
   --border: #898EA4;
   --accent: #0d47a1;
+  --accent-hover: #2770dd;
   --accent-text: var(--bg);
   --code: #d81b60;
   --preformatted: #444;
@@ -222,13 +224,43 @@ header > div > nav ol li {
 header > div > nav a, 
 header > div > nav a:visited {
     text-decoration: none;
-    color: var(--text-light);
+    color: var(--text);
+}
+
+
+header > div > nav a {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 header > div > nav a:hover {
   cursor: pointer;
-  color: var(--text);
-  text-decoration: underline;
+  color: var(--text-dark);
+}
+
+header > div > nav a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 2px;
+  bottom: 0;
+  left: 51%;
+  right: 51%;
+  background: var(--text);
+  transition-duration: var(--transition);
+  transition-property: right, left;
+  transition-timing-function: ease-out;
+}
+header > div > nav a:active:before, 
+header > div > nav a:focus:before, 
+header > div > nav a:hover:before {
+  right: 0;
+  left: 0;
 }
 
 footer > p {
@@ -245,7 +277,8 @@ a:visited {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
+  transition: var(--transition);
   text-decoration: none;
 }
 
