@@ -199,8 +199,8 @@ nav {
     /* padding: 1rem 0 0 0; */
 }
 
-header > nav ul,
-header > nav ol {
+header > div > nav ul,
+header > div > nav ol {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -213,18 +213,18 @@ header > nav ol {
     /* padding-inline-start: 0px; */
 }
 
-header > nav ul li,
-header > nav ol li {
+header > div > nav ul li,
+header > div > nav ol li {
     display: inline-block;
 }
 
-header > nav a, 
-header > nav a:visited {
+header > div > nav a, 
+header > div > nav a:visited {
     text-decoration: none;
     color: var(--text-light);
 }
 
-header > nav a:hover {
+header > div > nav a:hover {
   cursor: pointer;
   color: var(--text);
   text-decoration: underline;
@@ -543,6 +543,15 @@ abbr[title] {
 /* .hint { --cmed: var(--cemph); --clight: var(--cemphbg); background-color: var(--clight); } */
 
 /* .warn { --cmed: #c11; --clight: #e221; background-color: var(--clight); } */
+
+/* make the header container smaller only on larger screens */
+@media only screen and (min-width: 1800px) {
+  .header-container {
+    max-width: 60rem;
+    margin: 0px auto;
+    padding: 0;
+  }
+}
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
