@@ -3,18 +3,20 @@
 {# Override the header to avoid build fails due to zola being unable to know the current path of a 404 page #}
 {# see https://www.getzola.org/documentation/templates/overview/ #}
   {% block header %}
-    <header>
-    <nav class="menu">
-        <ul class="nav">
-            {% set menu_items = config.extra.navbar_items -%}
-            {% for item in menu_items -%}
-            <li class="nav-item">
-                <a href="{{ config.base_url ~ item.url  }}">{{ item.name }}</a>
-            </li>
-            {% endfor -%}
-        </ul>
-    </nav>
-</header>
+  <header>
+    <div class="header-container">
+      <nav class="menu">
+          <ul class="nav">
+              {% set menu_items = config.extra.navbar_items -%}
+              {% for item in menu_items -%}
+              <li class="nav-item">
+                  <a href="{{ config.base_url ~ item.url  }}">{{ item.name }}</a>
+              </li>
+              {% endfor -%}
+          </ul>
+      </nav>
+    </div>
+  </header>
   {% endblock %}
 
 {% block content %}
