@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+
+{% for asset in page.assets -%}
+  {% if asset is ending_with("bib") -%}{{asset}}{% break -%}{% endif -%}
+{% endfor -%}
+
+{% set bibtex = load_data(path="content/publications/second/cite.bib", required=false, format="bibtex") -%}
+
 <div class="pub-container">
     <h1>{{ page.title }}</h1>
     <div class="pub-buttons">
@@ -52,4 +60,5 @@
         </div>
     </article>
 </div>
+
 {% endblock content %}
