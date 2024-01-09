@@ -105,6 +105,13 @@ main {
     padding-top: 1.5rem;
 }
 
+header>nav a.current,
+nav a[aria-current="page"] {
+  position: relative;
+  color: var(--text);
+  font-weight: 900;
+}
+
 
 /* footer */
 
