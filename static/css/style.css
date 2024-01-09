@@ -11,6 +11,7 @@
   --standard-border-radius: 5px;
   --navspacer-large:2rem;
   --navspacer-small:0.9rem;
+  --transition: 200ms;
   
   /* Default (light) theme */
   --bg: #fff;
@@ -240,9 +241,11 @@ footer > p {
 a,
 a:visited {
   color: var(--accent);
+  transition: var(--transition);
 }
 
 a:hover {
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -755,30 +758,39 @@ p > .publist-date {
   font-style: italic;
 }
 
-.pub-footer {
+.page-nav {
+  display: flex;
+  margin-top: 6rem;
   border-top: 1px dashed var(--border);
-  padding: 1.5em 0;
   font-style: italic;
-  margin: 3.5rem auto;
+  line-height: 1.5;
 }
-
-.next, .previous {
+.page-nav .page-nav-item {
   font-weight: 600;
-  transition: transform 0.3s ease-out;
+  width: 50%;
+  padding-top: 1rem;
   text-decoration: none;
 }
-
-.next:hover, .previous:hover {
+.page-nav .page-nav-item:hover .page-title {
   color: var(--code);
-  transform: translateX(4px)
 }
-
-.next {
-  float: right;
+.page-nav .page-nav-item:nth-child(2n + 1) {
+  padding-left: 0;
+  padding-right: 1rem;
 }
-
-.previous {
-  float: left;
+.page-nav .page-nav-item:nth-child(2n) {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 1rem;
+}
+.page-nav .page-nav-item .nav-arrow {
+  font-weight: 400;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+.page-nav .page-nav-item .page-title {
+  color: var(--text);
+  transition: var(--transition);
 }
 
 /* Misc */
