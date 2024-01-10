@@ -19,7 +19,7 @@
           {% if page.extra.url_pdf %}
             <a href="{{ page.extra.url_pdf }}"><button>Publisher's PDF</button></a>
           {% endif %}
-            <a href=""><button>Cite</button></a>
+            <a href="{{ page.permalink | safe }}cite.bib"><button>Cite</button></a>
           {% if page.extra.url_code %}
             <a href="{{ page.extra.url_code }}"><button>Code</button></a>
           {% endif %}
