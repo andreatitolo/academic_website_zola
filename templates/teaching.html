@@ -10,7 +10,10 @@
       {% for page in teaching %}
       {% set start_date = page.extra.start_date | date(format="%Y-%m") -%}
       {% set end_date = page.extra.end_date | date(format="%Y-%m") -%}
-      <li class="publist-item"> {% for author in page.extra.authors %} {{ author }} {% endfor %} - <a href="{{ page.permalink | safe }}">{{ page.title }}</a> (<time datetime="{{start_date}}">{{ start_date }}</time> - <time datetime= "{{end_date}}">{{ end_date }}</time>)
+      <li class="publist-item"> 
+        {% for author in page.extra.authors %} {{ author }} {% endfor %} 
+        - <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        <p>(<time datetime="{{start_date}}">{{ start_date }}</time> - <time datetime= "{{end_date}}">{{ end_date }}</time>)</p>
         <p>
           {% if page.extra.url_website %}
             <a href="{{ page.extra.url_website }}"><button>Website</button></a>

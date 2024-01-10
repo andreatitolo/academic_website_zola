@@ -16,8 +16,10 @@
             <li><strong>Supervisor(s)</strong>: {% for author in page.extra.authors %} {{ author }} {% endfor %} </li>
             <li><strong>Start Date</strong>: <time datetime="{{ page.extra.start_date }}">{{ page.extra.start_date }}</time></li>
             <li><strong>End Date</strong>: <time datetime="{{ page.extra.end_date }}">{{ page.extra.end_date }}</time></li>
+            {% if page.extra.url_website %}
             <li><strong>Website</strong>: <a href="{{page.extra.url_website}}">{{page.extra.url_website}}</a> </li>
-            <li><strong>Language</strong>: {{page.extra.language}} </li>
+            {% endif %}
+            <li><strong>Language</strong>: <i>{{page.extra.language}}</i> </li>
             <li><strong>Tags</strong>: {% for tag in page.extra.tags %} <a href="" class="pub-tag">{{ tag }}</a> {% endfor %}</li>
         </ul>
     </div>
@@ -33,17 +35,23 @@
 
         {{ page.content | safe }}
 
-        <div class="pub-footer">
-            {% block page_footer %}
-                {% if page.lower or page.higher %}
-                    {% if page.lower %}
-                        <a class="previous" href="{{ page.lower.permalink }}">‹ {{ page.lower.title }}</a>
-                    {% endif %}
-                    {% if page.higher %}
-                        <a class="next" href="{{ page.higher.permalink }}">{{ page.higher.title }} ›</a>
-                    {% endif %}
-                {% endif %}
-            {% endblock page_footer %}
+        {% if page.lower or page.higher %}
+            <nav class="page-nav">
+            {% if page.higher %}
+                <a class="page-nav-item page-nav-prev" href="{{ page.higher.permalink }}">
+                    <div class="nav-arrow">← Previous</div>
+                    <span class="page-title">{{ page.higher.title }}</span>
+                </a>
+            {% endif %}
+            {% if page.lower %}
+                <a class="page-nav-item page-nav-next" href="{{ page.lower.permalink }}">
+                    <div class="nav-arrow">Next →</div>
+                    <span class="page-title">{{ page.lower.title }}</span>
+                </a>
+            {% endif %}
+            </nav>
+        {% endif %}
+        
         </div>
     </article>
 </div>
