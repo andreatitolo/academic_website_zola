@@ -42,13 +42,13 @@
         {% if page.lower or page.higher %}
             <nav class="page-nav">
             {% if page.higher %}
-                <a class="page-nav-item page-nav-prev" href="{{ page.higher.permalink }}">
+                <a class="page-nav-item" href="{{ page.higher.permalink }}">
                     <div class="nav-arrow">← Previous</div>
                     <span class="page-title">{{ page.higher.title }}</span>
                 </a>
             {% endif %}
             {% if page.lower %}
-                <a class="page-nav-item page-nav-next" href="{{ page.lower.permalink }}">
+                <a class="page-nav-item" href="{{ page.lower.permalink }}">
                     <div class="nav-arrow">Next →</div>
                     <span class="page-title">{{ page.lower.title }}</span>
                 </a>
