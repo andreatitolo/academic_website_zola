@@ -12,7 +12,7 @@
       <p> <time datetime="{{ page.date }}">{{ page.date }}</time> - {{ page.extra.location }}</p>
         <p>
           {% if page.extra.url_slides %}
-            <a href="{{ page.extra.url_slides }}"><button>Slides</button></a>
+            <a href="{{ page.permalink | safe }}{{ page.extra.url_slides }}"><button>Slides</button></a>
           {% endif %}
           {% if page.extra.url_code %}
             <a href="{{ page.extra.url_code }}"><button>Code</button></a>
