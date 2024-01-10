@@ -579,15 +579,6 @@ abbr[title] {
 
 /* .warn { --cmed: #c11; --clight: #e221; background-color: var(--clight); } */
 
-/* make the header container smaller only on larger screens */
-@media only screen and (min-width: 1800px) {
-  .header-container {
-    max-width: 60rem;
-    margin: 0px auto;
-    padding: 0;
-  }
-}
-
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
   /* clip: rect(0 0 0 0); */
@@ -824,6 +815,24 @@ p > .publist-date {
   color: var(--text);
   transition: var(--transition);
 }
+
+/* Adapt for larger screens */
+
+@media only screen and (min-width: 1800px) {
+  
+  /* make post container larger  */
+  .pub-container {
+    max-width: 920px;
+  }
+
+  /* make the header container smaller only on larger screens */
+  .header-container {
+    max-width: 60rem;
+    margin: 0px auto;
+    padding: 0;
+  }
+}
+
 
 /* Misc */
 
