@@ -18,9 +18,10 @@
   --accent-bg: #f5f7ff;
   --text: #443333;
   --text-light: #5b5b5b;
+  --text-lighter: #dfdfdf;
   --text-dark: #281e1e;
   --border: #898EA4;
-  --accent: #0d47a1;
+  --accent: #C74600;
   --accent-hover: #2770dd;
   --accent-text: var(--bg);
   --code: #d81b60;
@@ -227,7 +228,6 @@ header > div > nav a:visited {
     color: var(--text);
 }
 
-
 header > div > nav a {
   display: inline-block;
   vertical-align: middle;
@@ -273,13 +273,12 @@ footer > p {
 a,
 a:visited {
   color: var(--accent);
-  transition: var(--transition);
+  text-decoration-color: var(--text-lighter);
 }
 
 a:hover {
-  color: var(--accent-hover);
-  transition: var(--transition);
-  text-decoration: none;
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 
