@@ -5,7 +5,9 @@
                 {% set menu_items = config.extra.navbar_items -%}
                 {% for item in menu_items -%}
                 <li class="nav-item">
-                    <a href="{{ config.base_url ~ item.url  }}" {%if item.url == current_path %} aria-current="page" {% endif %}>{{ item.name }}</a>
+                    <a href="{% if item.name == "Blog"%} {{ item.url }} {% else %} {{ config.base_url ~ item.url  }} {% endif %}" 
+                    {%if item.url == current_path %} aria-current="page" {% endif %}>{{ item.name }}
+                    </a>
                 </li>
                 {% endfor -%}
             </ul>
