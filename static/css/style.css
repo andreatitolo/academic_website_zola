@@ -14,19 +14,20 @@
   --transition: 200ms;
   
   /* Default (light) theme */
-  --bg: #fff;
-  --accent-bg: #f5f7ff;
-  --text: #443333;
-  --text-light: #5b5b5b;
+  --bg: #faf8f6;
+  --accent-bg: #fcfaf5;
+  --text: #362b2b;
+  --text-light: #645050;
   --text-lighter: #dfdfdf;
-  --text-dark: #281e1e;
-  --border: #898EA4;
-  --accent: #C74600;
-  --accent-hover: #2770dd;
-  --accent-text: var(--bg);
-  --code: #d81b60;
+  --text-dark: #120f0f;
+  --text-hover: #faf8f6;
+  --border: #a49989;
+  --accent: #df5910;
+  --accent-light: #ed8953;
+  --accent-hover: #dd7327;
+  --code: #1d1c1c;
   --preformatted: #444;
-  --marked: #ffdd33;
+  --marked: #ffe875;
   --disabled: #efefef;
 }
 
@@ -35,12 +36,17 @@
   :root,
   ::backdrop {
     color-scheme: dark;
-    --bg: #443333;
+    --bg: #191818;
     --accent-bg: #2b2b2b;
     --text: #dcdcdc;
     --text-light: #ababab;
+    --text-lighter: #646464;
+    --text-dark: #f7f7f7;
+    --text-hover: #1f1f1f;
+    --border: #383735;
     --accent: #ffb300;
-    --accent-text: var(--bg);
+    --accent-light: #ffb300;
+    --accent-hover: #ffb300;
     --code: #f06292;
     --preformatted: #ccc;
     --disabled: #111;
@@ -97,8 +103,9 @@ body > * {
 
 /* header */
 body > header {
-    background-color: var(--accent-bg);
+    background-color: var(--bg);
     border-bottom: 1px solid var(--border);
+    box-shadow: 0 .125rem .25rem var(--text-lighter);
     text-align: center;
     grid-column: -1/ 1;
     padding: 0 0.5rem 0.5rem;
@@ -128,8 +135,7 @@ body > footer {
     padding: 2rem 1rem 1.5rem 1rem;
 }
 
-
-/* headings */
+/* Headings */
 
 /* Format headers */
 h1 {
@@ -251,7 +257,7 @@ header > div > nav a:before {
   bottom: 0;
   left: 51%;
   right: 51%;
-  background: var(--text);
+  background: var(--accent);
   transition-duration: var(--transition);
   transition-property: right, left;
   transition-timing-function: ease-out;
@@ -317,8 +323,8 @@ input[type="submit"]:enabled:hover,
 input[type="reset"]:enabled:hover,
 input[type="button"]:enabled:hover,
 label[type="button"]:hover {
-  background-color: var(--text);
-  color: var(--bg);
+  background-color: var(--accent-light);
+  color: var(--text-hover);
   /* filter: brightness(1.4); */
   cursor: pointer;
 }
