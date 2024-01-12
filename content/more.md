@@ -5,6 +5,8 @@ title = "More"
 
 This page link to resources that are not linked from elsewhere in order not to clutter the site.
 
+## Site info
+
 - [Privacy & License](/privacy)
 - [Credits](/credits)
 - [Site info - Colophon](/colophon)

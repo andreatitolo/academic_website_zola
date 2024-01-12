@@ -3,7 +3,7 @@ title = "Contact"
 template = "contact-page.html"
 +++
 
-### Elsewhere
+## Elsewhere
 
 Inactive accounts (and some soon to be deleted):
 - [Linkedin](https://www.linkedin.com/in/andreatitolo/) - Suspended account
