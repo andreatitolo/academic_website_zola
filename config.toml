@@ -48,6 +48,7 @@ highlight_theme = "base16-ocean-dark"
 
 avatar = "img/avatar.webp"
 
+author = "A. Titolo"
 institution = "University of Turin"
 role = "Post-Doctoral Research Associate"
 email = "andrea.titolo@unito.it"
