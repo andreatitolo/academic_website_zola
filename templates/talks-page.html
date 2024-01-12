@@ -34,7 +34,15 @@
         {% endif %}
 
         {%- if page.extra.url_slides %}
-            <p class="notice">Click on the <strong>Slides</strong> button above to view the revealjs presentation.</p>
+            <p class="notice">
+                {% if page.extra.url_slides is ending_with(".html") %}
+                Click on the <strong>Slides</strong> button above to view the revealjs presentation.
+                {% elif page.extra.url_slides is ending_with(".pdf") %}
+                Click on the <strong>Slides</strong> button above to view the pdf presentation.
+                {% else %}
+                Click on the <strong>Slides</strong> button above to view the interactive presentation.
+                {% endif %}
+                </p>
         {%- endif %}
 
         {{ page.content | safe }}
