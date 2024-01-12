@@ -20,7 +20,15 @@
             <li><strong>Website</strong>: <a href="{{page.extra.url_website}}">{{page.extra.url_website}}</a> </li>
             {% endif %}
             <li><strong>Language</strong>: <i>{{page.extra.language}}</i> </li>
-            <li><strong>Tags</strong>: {% for tag in page.extra.tags %} <a href="" class="pub-tag">{{ tag }}</a> {% endfor %}</li>
+            <li><strong>Tags</strong>: 
+                {% for tag in page.extra.tags %} 
+                    {% if not loop.last %}
+                        <a href="" class="pub-tag">{{ tag }},</a> 
+                    {% elif loop.last %}
+                        <a href="" class="pub-tag">{{ tag }}</a> 
+                    {% endif %}
+                {% endfor %}
+            </li>
         </ul>
     </div>
     <article>
