@@ -4,10 +4,11 @@
 :root,
 ::backdrop {
   /* Set sans-serif & mono fonts */
-  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
-    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
-    "Helvetica Neue", sans-serif;
+  --sans-font:  Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  --serif-font: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  
+  /* misc */
   --standard-border-radius: 5px;
   --navspacer-large:2rem;
   --navspacer-small:0.9rem;
@@ -107,6 +108,7 @@ body > header {
     border-bottom: 1px solid var(--border);
     box-shadow: 0 .125rem .25rem var(--text-lighter);
     text-align: center;
+    font-family: var(--serif-font);
     grid-column: -1/ 1;
     padding: 0 0.5rem 0.5rem;
 }
@@ -130,6 +132,7 @@ body > footer {
     margin-top: 2rem;
     color: var(--text-light);
     font-size: 0.9rem;
+    font-family: var(--serif-font);
     text-align: center;
     border-top: 1px solid var(--border);
     padding: 2rem 1rem 1.5rem 1rem;
