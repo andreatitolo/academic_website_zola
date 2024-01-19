@@ -7,6 +7,6 @@ Some deserved thanks in the form of an incomplete list (to be updated) to people
 - [Andrew Heiss](https://www.andrewheiss.com/research/) for the idea behind the "Add to Zotero" button.
 - [Joe Roe](https://joeroe.io) for some inspiration regarding the cv and publications page.
 -  [Vincent Prouillet](https://github.com/Keats), for creating the Zola ssg and the Tera template engine.
-- David Lapshin, creator of the [Duckquill theme](https://www.getzola.org/themes/duckquill/), for some inspiration on the post footer.
+- David Lapshin, creator of the [Duckquill theme](https://www.getzola.org/themes/duckquill/), for some inspiration on the post footer (actually most of the code).
 - Adrien Faure, creator of the [Kodama theme](https://www.getzola.org/themes/kodama-theme/), for inspiration and making it easier to get some stuff from academic into Zola.
 
