@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 
 <div class="pub-container">
@@ -27,7 +26,15 @@
     </div>
     <div>
         <ul class="pub-metadata">
-            <li><strong>Authors</strong>: {% for author in page.extra.authors %} {{ author }} {% endfor %} </li>
+            <li><strong>Authors</strong>: 
+                {% for author in page.extra.authors %} 
+                    {% if not loop.last %}
+                        {{ author }},
+                    {% elif loop.last %}
+                        {{ author }}
+                    {% endif %}
+                {% endfor %} 
+            </li>
             <li><strong>Published</strong>: <time datetime="{{ page.date }}">{{ page.date }}</time></li>
             <li><strong>Type</strong>: {{page.extra.publication_type}} </li>
             <li><strong>Publication</strong>: {{page.extra.publication}} </li>
@@ -46,7 +53,7 @@
         {% if page.extra.abstract %} 
             {{ page.extra.abstract }}
         {% endif %}
-    {{ page.content | safe }}
+        {{ page.content | safe }}
         {% if page.lower or page.higher %}
             <nav class="page-nav">
             {% if page.higher %}

@@ -9,13 +9,22 @@
     <ul class="publist">
       {% for page in publications %}
       <li class="publist-item"> 
-        {% for author in page.extra.authors %} 
-          {% if author == config.extra.author %} 
-            <strong>{{ author }}</strong> 
-          {% else %}
-            {{ author }} 
-          {% endif %}
-        {% endfor %} (<time>{{ year }}</time>) - 
+        {% for author in page.extra.authors %}
+            {% if not loop.last %}
+            {% if author == config.extra.author %} 
+                <strong>{{ author }}</strong>,
+            {% else %}
+                {{ author }},
+            {% endif %}
+            {% elif loop.last %}
+            {% if author == config.extra.author %} 
+                <strong>{{ author }}</strong>
+            {% else %}
+                {{ author }}
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        (<time>{{ year }}</time>) - 
         <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
         <p>
           {% if page.extra.url_preprint %}
