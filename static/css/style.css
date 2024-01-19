@@ -502,17 +502,13 @@ figcaption {
 
 
 /* code */
-pre {
-  background-color: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--standard-border-radius);
-  margin-bottom: 1rem;
-}
+
 
 
 /* Use mono font for code elements */
 code,
 pre,
+pre span,
 kbd,
 samp {
   font-family: var(--mono-font);
@@ -527,7 +523,12 @@ kbd {
   padding: 0.1rem 0.4rem;
 }
 
+
 pre {
+  background-color: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  margin-bottom: 1rem;
   padding: 1rem 1.4rem;
   max-width: 100%;
   overflow: auto;
@@ -536,10 +537,23 @@ pre {
 
 /* Fix embedded code within pre */
 pre code {
-  color: var(--text-color-code-pre);
+  color: var(--text-light);
   background: none;
   margin: 0;
   padding: 0;
+}
+
+ /* Code blocks */
+ pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: var(--accent-bg);
 }
 
 /* forms and inputs  */
