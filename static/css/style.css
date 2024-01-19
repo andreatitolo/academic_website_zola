@@ -344,10 +344,11 @@ label[type="button"]:hover {
 
 .button:focus-visible,
 button:focus-visible:where(:enabled),
+input:focus,
 input:enabled:focus-visible:where([type="submit"],
   [type="reset"],
   [type="button"]) {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-underline);
   outline-offset: 1px;
 }
 
@@ -568,6 +569,7 @@ button,
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: var(--standard-border-radius);
+  background-color: var(--accent-bg);
   box-shadow: none;
   max-width: 100%;
   display: inline-block;
