@@ -38,7 +38,7 @@
   :root,
   ::backdrop {
     color-scheme: dark;
-    --bg: #333131;
+    --bg: #211f1f;
     --accent-bg: #2b2b2b;
     --text: #dcdcdc;
     --text-light: #ababab;
@@ -365,6 +365,7 @@ input:enabled:focus-visible:where([type="submit"],
 ul, ol, dl { 
   margin: 1rem 0; padding: 0 0 0 2em; 
 }
+
 main > ul li:not(:last-child), dd:not(:last-child) { 
   margin-bottom: 0.5rem; 
 }
@@ -861,7 +862,7 @@ p > .publist-date {
 
 /* Misc */
 .header-container {
-  max-width: 50rem;
+  max-width: 55rem;
   margin: 0px auto;
   padding: 0;
 }
