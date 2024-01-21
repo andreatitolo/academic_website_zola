@@ -28,8 +28,10 @@ feed_filename = "atom.xml"
 build_search_index = false
 
 taxonomies = [
-    { name = "publication", feed = true, paginate_by = 10 },
-    { name = "taks", feed = true, paginate_by = 10 },
+    { name = "publication", feed = true, paginate_by = 25 },
+    { name = "talks", feed = true, paginate_by = 25 },
+    { name = "teaching", feed = true, paginate_by = 25 },
+    { name = "tags", feed = true, paginate_by = 25 },
 ]
 
 
