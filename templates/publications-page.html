@@ -39,11 +39,11 @@
             <li><strong>Type</strong>: {{page.extra.publication_type}} </li>
             <li><strong>Publication</strong>: {{page.extra.publication}} </li>
             <li><strong>Tags</strong>: 
-                {% for tag in page.extra.tags %} 
+                {% for tag in page.taxonomies.tags %} 
                     {% if not loop.last %}
-                        <a href="" class="pub-tag">{{ tag }},</a> 
+                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }},</a> 
                     {% elif loop.last %}
-                        <a href="" class="pub-tag">{{ tag }}</a> 
+                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a> 
                     {% endif %}
                 {% endfor %}
             </li>
