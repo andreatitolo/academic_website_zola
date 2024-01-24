@@ -746,6 +746,10 @@ abbr[title] {
   margin-top: 0.2rem;
 }
 
+.network-item > a {
+  color: var(--text);
+}
+
 #background h3 {
   font-weight: 700;
   margin-top: 1.5rem;

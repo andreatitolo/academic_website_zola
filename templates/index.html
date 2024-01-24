@@ -20,11 +20,8 @@
               </p>
             </small>
           </div>
-          <ul class="network">
-            {% set social_items = config.extra.social_buttons -%}
-            {% for item in social_items -%}
-            <li class="network-item"><a href="{{ item.link | replace(from='$EMAIL_ADDRESS', to=config.extra.email)}}"><button>{{ item.name }}</button></a></li>
-            {% endfor -%}
+          <ul class="network">            
+              {{macros::render_social_icons()}}
           </ul>
         </div>
       </div>

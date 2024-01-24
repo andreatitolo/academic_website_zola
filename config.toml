@@ -58,12 +58,12 @@ email = "andrea.titolo@unito.it"
 footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 social_buttons = [
-    {link = "mailto:$EMAIL_ADDRESS", name = "Mail"},
-    {link = "https://github.com/andreatitolo", name = "Github"},
-    {link = "https://codeberg.org/titoloandrea", name = "Codeberg"},
-    {link = "https://orcid.org/0000-0002-7322-8634", name = "ORCID"},
-    {link = "https://archaeo.social/web/@andreatitolo", name = "Mastodon"},
-    {link = "https://keyoxide.org/hkp/0CD517A1F847FBC4F8E560A0F489AA7383618137", name = "Keyoxide"}
+    {link = "mailto:$EMAIL_ADDRESS", name = "email"},
+    {link = "https://github.com/andreatitolo", name = "github"},
+    {link = "https://codeberg.org/titoloandrea", name = "codeberg"},
+    {link = "https://orcid.org/0000-0002-7322-8634", name = "orcid"},
+    {link = "https://archaeo.social/web/@andreatitolo", name = "mastodon"},
+    {link = "https://keyoxide.org/hkp/0CD517A1F847FBC4F8E560A0F489AA7383618137", name = "keyoxide"}
 ]
 
 # trailing slashes are needed for the aria-current page in header.html to work
