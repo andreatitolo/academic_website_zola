@@ -61,6 +61,7 @@ social_buttons = [
     {link = "mailto:$EMAIL_ADDRESS", name = "email"},
     {link = "https://github.com/andreatitolo", name = "github"},
     {link = "https://codeberg.org/titoloandrea", name = "codeberg"},
+    {link = "https://archaeo.cc/forgejo/andreatitolo", name = "forgejo"},
     {link = "https://orcid.org/0000-0002-7322-8634", name = "orcid"},
     {link = "https://archaeo.social/web/@andreatitolo", name = "mastodon"},
     {link = "https://keyoxide.org/hkp/0CD517A1F847FBC4F8E560A0F489AA7383618137", name = "keyoxide"}
