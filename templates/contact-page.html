@@ -12,7 +12,7 @@
 {% set loop_break = 5 -%}
 {% for item in social_items | reverse -%}
 {% if loop.index0 == loop_break %}{% break %}{% endif %}
-<li class="network-item"><a href="{{ item.link }}">{{ item.name }}</a></li>
+<li class="network-item"><a href="{{ item.link }}">{{ item.name | capitalize}}</a></li>
 {% endfor -%}
 </ul>
 
