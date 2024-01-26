@@ -10,5 +10,6 @@ Some deserved thanks in the form of an incomplete list (to be updated) to people
 - David Lapshin, creator of the [Duckquill theme](https://www.getzola.org/themes/duckquill/), for some inspiration on the post footer (actually most of the code).
 - Adrien Faure, creator of the [Kodama theme](https://www.getzola.org/themes/kodama-theme/), for inspiration and making it easier to get some stuff from academic into Zola.
 - [Daniel Sockwell](https://www.codesections.com/) for the [Even](https://getzola.github.io/even) theme, which inspired the taxonomies single page template and style.
-- [Cydave](https://github.com/cydave) for the [Zola Papermod](https://cydave.github.io/zola-theme-papermod/) theme, which inspired the taxonomies list template.
+- [Cydave](https://github.com/cydave) for the [Zola Papermod](https://cydave.github.io/zola-theme-papermod/) theme, which inspired the taxonomies list template, and for the social icon macro.
+- [Simpleicons](https://simpleicons.org/) for the forgejo icon.
 
