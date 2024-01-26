@@ -405,16 +405,12 @@ dialog {
   margin-bottom: 1rem;
 }
 
-article h2:first-child,
-section h2:first-child {
+article h2:first-child {
   margin-top: 1rem;
 }
 
 section {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
   padding: 2rem 1rem;
-  margin: 3rem 0;
 }
 
 /* Don't double separators when chaining sections */
@@ -956,4 +952,40 @@ p > .publist-date {
 .taxonomy-item-time {
   margin-right: 10px;
   color: var(--border)
+}
+
+.pagination-nav {
+  display: flex;
+  margin-top: 0rem;
+  padding-top: 1.5rem;
+  border-top: 0.5px solid   var(--border);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.pagination-nav-item {
+  font-weight: 600;
+  width: 50%;
+  padding-top: 1rem;
+  text-decoration: none;
+}
+
+.pagination-nav-item:nth-child(2n + 1) {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+.pagination-nav-item:nth-child(2n) {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+.pagination-nav-arrow {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  transition: var(--transition);
+  text-decoration: none;
+}
+.pagination-nav-arrow:hover {
+  color: var(--code);
 }

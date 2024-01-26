@@ -1,57 +1,75 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
-  {% for year, publications in section.pages | group_by(attribute="year") %}
-      <h2>{{ year }}</h2>
-    <ul class="publist">
-      {% for page in publications %}
-      <li class="publist-item"> 
-        {% for author in page.taxonomies.authors %}
-            {% if not loop.last %}
-            {% if author == config.extra.author %} 
-                <strong><a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a></strong>,
-            {% else %}
-                <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>,
-            {% endif %}
-            {% elif loop.last %}
-            {% if author == config.extra.author %} 
-                <strong><a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a></strong>
-            {% else %}
-                <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-        (<time>{{ year }}</time>) - 
-        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-        <p>
-          {% if page.extra.url_preprint %}
-            <a href="{{ page.extra.url_preprint }}"><button>Preprint</button></a>
-          {% endif %}
-          {% if page.extra.url_local_pdf %}
-            <a href="{{ page.permalink | safe }}{{ page.extra.url_local_pdf }}"><button>Self-archived PDF</button></a>
-          {% endif %}
-          {% if page.extra.url_pdf %}
-            <a href="{{ page.extra.url_pdf }}"><button>Publisher's PDF</button></a>
-          {% endif %}
-            <a href="{{ page.permalink | safe }}cite.bib"><button>Cite</button></a>
-          {% if page.extra.url_code %}
-            <a href="{{ page.extra.url_code }}"><button>Code</button></a>
-          {% endif %}
-          {% if page.extra.url_dataset %}
-            <a href="{{ page.extra.url_dataset }}"><button>Dataset</button></a>
-          {% endif %}
-          {% if page.extra.url_doi %}
-            <a href="{{ page.extra.url_doi }}"><button>DOI</button></a>
-          {% endif %}
-          {% if page.extra.url_doi %} 
-            <a href="https://www.zotero.org/save?type=doi&q={{ page.extra.url_doi }}"><button><strong>Z</strong> Add to Zotero</button></a> 
-          {% endif %}
-        </p>
-      </li> 
+<article>
+  <section>
+    <h1 class="title">
+      {{ section.title }}
+    </h1>
+      {% for year, publications in paginator.pages | group_by(attribute="year") %}
+          <h2>{{ year }}</h2>
+        <ul class="publist">
+          {% for page in publications %}
+          <li class="publist-item">
+            {% for author in page.taxonomies.authors %}
+                {% if not loop.last %}
+                {% if author == config.extra.author %}
+                    <strong><a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a></strong>,
+                {% else %}
+                    <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>,
+                {% endif %}
+                {% elif loop.last %}
+                {% if author == config.extra.author %}
+                    <strong><a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a></strong>
+                {% else %}
+                    <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+            (<time>{{ year }}</time>) -
+            <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+            <p>
+              {% if page.extra.url_preprint %}
+                <a href="{{ page.extra.url_preprint }}"><button>Preprint</button></a>
+              {% endif %}
+              {% if page.extra.url_local_pdf %}
+                <a href="{{ page.permalink | safe }}{{ page.extra.url_local_pdf }}"><button>Self-archived PDF</button></a>
+              {% endif %}
+              {% if page.extra.url_pdf %}
+                <a href="{{ page.extra.url_pdf }}"><button>Publisher's PDF</button></a>
+              {% endif %}
+                <a href="{{ page.permalink | safe }}cite.bib"><button>Cite</button></a>
+              {% if page.extra.url_code %}
+                <a href="{{ page.extra.url_code }}"><button>Code</button></a>
+              {% endif %}
+              {% if page.extra.url_dataset %}
+                <a href="{{ page.extra.url_dataset }}"><button>Dataset</button></a>
+              {% endif %}
+              {% if page.extra.url_doi %}
+                <a href="{{ page.extra.url_doi }}"><button>DOI</button></a>
+              {% endif %}
+              {% if page.extra.url_doi %}
+                <a href="https://www.zotero.org/save?type=doi&q={{ page.extra.url_doi }}"><button><strong>Z</strong> Add to Zotero</button></a>
+              {% endif %}
+            </p>
+          </li>
+          {% endfor %}
+        </ul>
       {% endfor %}
-    </ul>
-  {% endfor %}
+  </section>
+  {% if paginator.next or paginator.previous %}
+    <nav class="pagination-nav">
+        {% if paginator.previous %}
+            <div class="pagination-nav-item">
+              <a href="{{ paginator.previous }}" class="pagination-nav-arrow">← Previous</a>
+            </div>
+        {% endif %}
+        {% if paginator.next %}
+            <div class="pagination-nav-item">
+              <a href="{{ paginator.next }}" class="pagination-nav-arrow">Next →</a>
+            </div>
+        {% endif %}
+    </nav>
+  {% endif %}
+</article>
 {% endblock content %}
