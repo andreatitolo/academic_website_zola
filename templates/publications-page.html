@@ -41,7 +41,7 @@
             <li><strong>Tags</strong>: 
                 {% for tag in page.taxonomies.tags %} 
                     {% if not loop.last %}
-                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }},</a> 
+                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a>,
                     {% elif loop.last %}
                         <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a> 
                     {% endif %}
