@@ -1,8 +1,9 @@
 +++
 title = "Paesaggi sommersi. Metodologie di monitoraggio, prevenzione e salvaguardia dei siti a rischio del bacino della diga di Mosul, Irak. Il progetto RE-Land."
 date = "2023-01-27"
-[extra]
+[taxonomies]
 authors = [ "Paola Sconzo", "Francesca Simi", "A. Titolo" ]
+[extra]
 event = "Ciclo di Seminari Scienze Applicate ai Beni Culturali"
 location = "Università di Palermo, Dipartimento Culture e Società"
 description = "Section of a larger talk presented at the Seminar series at the University of Palermo."

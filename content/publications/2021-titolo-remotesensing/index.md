@@ -7,10 +7,9 @@ tags = [
   "Remote Sensing",
   "Google Earth Engine",
   "Iraq",
-  "publication"
 ]
-[extra]
 authors = [ "A. Titolo" ]
+[extra]
 publication = 'Special Issue "Remote Sensing of Archaeology"'
 publication_type = "Journal Article"
 url_code = "https://github.com/andreatitolo/IraqEmerginSites"

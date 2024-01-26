@@ -1,8 +1,9 @@
 +++
 title = "Pattern Insediamentali nell'età del Ferro - il caso studio del Medio Eufrate Iracheno."
 date = "2018-01-30"
-[extra]
+[taxonomies]
 authors = [ "A. Titolo" ]
+[extra]
 event = "SSDA2018"
 location = "Sapienza Università di Roma"
 url_homepage = "https://sites.google.com/uniroma1.it/semdottoratoarcheosap/home?authuser=0"

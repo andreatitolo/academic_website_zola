@@ -1,8 +1,9 @@
 +++
 title = "Assyrian imperial frontiers during the first millennium BC - the case of the Iraqi Middle Euphrates"
 date = "2017-06-08"
-[extra]
+[taxonomies]
 authors = [ "A. Titolo" ]
+[extra]
 event = "Broadening Horizons 5"
 location = "Department of Humanities and Cultural Heritage, Università degli Studi di Udine"
 description = "Talk and slides presented at the Broadening Horizons 5 Conference."

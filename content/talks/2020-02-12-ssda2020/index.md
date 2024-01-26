@@ -1,6 +1,8 @@
 +++
 title = "Aspetti regionali della distribuzione insediativa lungo l’Eufrate nell’età del Ferro (X-VII secolo a.C.)"
 date = "2020-02-12"
+[taxonomies]
+authors = [ "A. Titolo" ]
 [extra]
 authors = [ "A. Titolo" ]
 event = "SSDA2020"

@@ -1,8 +1,9 @@
 +++
 title = "Water, Landscapes and Settlements along the River. Case Studies from the Syrian Middle Euphrates"
 date = "2021-04-09"
-[extra]
+[taxonomies]
 authors = [ "A. Titolo" ]
+[extra]
 event = "XII ICAANE"
 location = "Alma Mater Studiorum Bologna (Online)"
 description = "Talk and slides presented at the XII International Congess on the Archaeology of the Ancient Near East."

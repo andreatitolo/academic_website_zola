@@ -12,6 +12,7 @@ This page link to resources that are not linked from elsewhere in order not to c
 - [Site info - Colophon](/colophon)
 - [Sitemap](/sitemap.xml)
 - [Tags](/tags)
+- [Authors](/authors)
 
 ## RSS
 

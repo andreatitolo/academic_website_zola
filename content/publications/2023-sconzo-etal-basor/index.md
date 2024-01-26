@@ -8,11 +8,10 @@ tags = [
   "Landscape Archaeology",
   "Remote Sensing",
   "Endangered Archaeology",
-  "Change Detection",
-  "publication"
+  "Change Detection"
 ]
-[extra]
 authors = [ "P. Sconzo", "F. Simi", "A. Titolo" ]
+[extra]
 publication = "Bulletin of the American Society of Overseas Research"
 publication_type = "Journal Article"
 url_code = "https://github.com/ReLandProject/MosulDrownedLandscape"

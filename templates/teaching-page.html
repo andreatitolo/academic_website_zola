@@ -13,7 +13,10 @@
     </div>
     <div>
         <ul class="pub-metadata">
-            <li><strong>Supervisor(s)</strong>: {% for author in page.extra.authors %} {{ author }} {% endfor %} </li>
+            <li><strong>Supervisor(s)</strong>: 
+            {% for author in page.taxonomies.authors %} 
+            <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
+            {% endfor %} </li>
             <li><strong>Start Date</strong>: <time datetime="{{ page.extra.start_date }}">{{ page.extra.start_date }}</time></li>
             <li><strong>End Date</strong>: <time datetime="{{ page.extra.end_date }}">{{ page.extra.end_date }}</time></li>
             {% if page.extra.url_website %}

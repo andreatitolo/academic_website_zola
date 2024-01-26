@@ -1,8 +1,9 @@
 +++
 title = "On the Edge of the Empire - Riverine Landscape and Settlement Patterns in the Haditha Dam Region during the Iron Age."
 date = "2018-03-29"
-[extra]
+[taxonomies]
 authors = [ "A. Titolo" ]
+[extra]
 event = "BANEA 2018"
 location = "Business School, University of Durham"
 description = "Talk and slides presented at the BANEA 2018 conference."

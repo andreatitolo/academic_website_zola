@@ -21,7 +21,7 @@
   --text: #362b2b;
   --text-light: #645050;
   --text-lighter: #eae5e5;
-  --text-dark: #120f0f;
+  --text-dark: #070606;
   --text-hover: #faf8f6;
   --border: #a49989;
   --accent: #df5910;
@@ -292,6 +292,7 @@ a:visited {
   color: var(--accent);
   text-decoration-color: var(--accent-underline);
   text-underline-offset: 3px;
+  /* transition: all .1s ease-in-out; */
 }
 
 a:hover {
@@ -829,6 +830,17 @@ p > .publist-date {
 .pub-tag {
   font-style: italic;
   padding: 0 2px;
+}
+
+.pub-author,
+.pub-author:visited {
+  color: var(--text);
+  text-decoration: none;
+  transition:color .15s ease-in-out
+}
+
+.pub-author:hover {
+  color: var(--accent);
 }
 
 .page-nav {

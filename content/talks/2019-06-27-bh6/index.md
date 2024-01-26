@@ -1,8 +1,9 @@
 +++
 title = "Archaeological Landscape of the Lower Syrian Euphrates Valley - An Integrated Approach Towards the Reconstruction of the Settlement Patterns during the Iron Age."
 date = "2019-06-27"
-[extra]
+[taxonomies]
 authors = [ "A. Titolo" ]
+[extra]
 event = "Broadening Horizons 6"
 location = "Department of History and Cultural Studies, Freie Universität Berlin"
 description = "Talk and slides presented at the Broadening Horizons 6 Conference."

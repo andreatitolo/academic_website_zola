@@ -9,18 +9,18 @@
     <ul class="publist">
       {% for page in publications %}
       <li class="publist-item"> 
-        {% for author in page.extra.authors %}
+        {% for author in page.taxonomies.authors %}
             {% if not loop.last %}
             {% if author == config.extra.author %} 
-                <strong>{{ author }}</strong>,
+                <strong><a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a></strong>,
             {% else %}
-                {{ author }},
+                <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>,
             {% endif %}
             {% elif loop.last %}
             {% if author == config.extra.author %} 
-                <strong>{{ author }}</strong>
+                <strong><a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a></strong>
             {% else %}
-                {{ author }}
+                <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
             {% endif %}
             {% endif %}
         {% endfor %}

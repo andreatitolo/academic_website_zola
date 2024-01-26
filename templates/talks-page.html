@@ -20,7 +20,11 @@
     </div>
     <div>
         <ul class="pub-metadata">
-            <li><strong>Speaker(s)</strong>: {% for author in page.extra.authors %} {{ author }} {% endfor %} </li>
+            <li><strong>Speaker(s)</strong>: 
+                {% for author in page.taxonomies.authors %} 
+                <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
+                {% endfor %} 
+            </li>
             <li><strong>Date</strong>: <time datetime="{{ page.date }}">{{ page.date }}</time></li>
             <li><strong>Event</strong>: {{page.extra.event}} </li>
             <li><strong>Location</strong>: {{page.extra.location}} </li>

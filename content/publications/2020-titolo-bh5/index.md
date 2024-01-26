@@ -9,8 +9,8 @@ tags = [
   "Frontier Studies",
   "publication"
 ]
-[extra]
 authors = [ "A. Titolo" ]
+[extra]
 publication = "Imperial Connections. Interactions and Expansion from Assyria to the Roman Period. Volume 2. Proceedings of the 5th “Broadening Horizons” Conference (Udine 5-8 June 2017), Trieste, EUT Edizioni Università di Trieste, 2020."
 publication_type = "Conference paper"
 url_local_pdf = "Titolo_2020_bh5.pdf"

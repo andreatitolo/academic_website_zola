@@ -1,8 +1,9 @@
 +++
 title = "L’Età del Ferro nell’area dell’Eufrate Siriano - siti e ricostruzione del paesaggio archeologico."
 date = "2019-01-30"
-[extra]
+[taxonomies]
 authors = [ "A. Titolo" ]
+[extra]
 event = "SSDA2020"
 location = "Sapienza Università di Roma"
 description = "Talk and slides presented at the VI Seminario della Scuola di Dottorato in Archeologia (SSDA)."

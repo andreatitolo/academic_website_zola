@@ -9,7 +9,6 @@ tags = [
   "Remote Sensing",
   "publication"
 ]
-[extra]
 authors = [
   "M. Haider",
   "M. D'Andrea",
@@ -17,6 +16,7 @@ authors = [
   "A. Titolo",
   "P. de Paolis"
 ]
+[extra]
 publication = "Studia Eblaitica. Studies on the Archaeology, History, and Philology of Ancient Syria"
 publication_type = "Journal Article"
 url_publisher = "https://www.harrassowitz-verlag.de/Studia_Eblaitica_8_(2022)/title_7162.ahtml"

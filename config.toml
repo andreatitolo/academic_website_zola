@@ -32,8 +32,8 @@ taxonomies = [
     { name = "talks", feed = true, paginate_by = 25 },
     { name = "teaching", feed = true, paginate_by = 25 },
     { name = "tags", feed = true, paginate_by = 25 },
+    { name = "authors", feed = true, paginate_by = 25 },
 ]
-
 
 [slugify]
 # Check if this is actually needed or not

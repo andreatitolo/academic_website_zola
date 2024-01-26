@@ -27,11 +27,11 @@
     <div>
         <ul class="pub-metadata">
             <li><strong>Authors</strong>: 
-                {% for author in page.extra.authors %} 
+                {% for author in page.taxonomies.authors %} 
                     {% if not loop.last %}
-                        {{ author }},
+                       <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>,
                     {% elif loop.last %}
-                        {{ author }}
+                        <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
                     {% endif %}
                 {% endfor %} 
             </li>

@@ -1,8 +1,9 @@
 +++
 title = "Monitoring Emerging Archaeological Sites Using Multitemporal NDWI - Case Studies from Iraq."
 date = "2020-01-10"
-[extra]
+[taxonomies]
 authors = [ "A. Titolo" ]
+[extra]
 event = "BANEA 2020"
 location = "University of Oxford - Ahsmolean Museum"
 description = "Talk and slides presented at the Banea 2020 Conference."
