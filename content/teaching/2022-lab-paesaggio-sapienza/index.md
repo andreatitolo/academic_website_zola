@@ -9,7 +9,7 @@ tags = [
   "QGIS",
   "Western Asia",
 ]
-authors = [ "Andrea Titolo" ]
+authors = [ "A. Titolo" ]
 [extra]
 start_date = "2022-02-15"
 end_date = "2022-06-10"
