@@ -1,7 +1,7 @@
 {% macro render_social_icons() %}
 {% for icon in config.extra.social_buttons %}
 <li class="network-item"> 
-    <a href="{{ icon.link }}" target="_blank" rel="noopener me"
+    <a href="{{ icon.link | replace(from='$EMAIL_ADDRESS', to=config.extra.email) }}" target="_blank" rel="noopener me"
     title="{{ icon.name | capitalize }}">
     {% if icon.name == "123rf" %}
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
