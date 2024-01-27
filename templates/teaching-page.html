@@ -3,14 +3,14 @@
 {% block content %}
 <div class="pub-container">
     <h1>{{ page.title }}</h1>
-    <div class="pub-buttons">
+    <ul class="pub-buttons">
         {% if page.extra.url_website %}
-            <a href="{{ page.extra.url_website }}"><button>Website</button></a>
+            <li><a href="{{ page.extra.url_website }}">{{ pub_icons::render_pub_icon(icon="web") }}Website</a></li>
         {% endif %}
         {% if page.extra.url_repo %}
-            <a href="{{ page.extra.url_repo }}"><button>Repository</button></a>
+            <li><a href="{{ page.extra.url_repo }}">{{ pub_icons::render_pub_icon(icon="git") }}Repository</a></li>
         {% endif %}
-    </div>
+    </ul>
     <div>
         <ul class="pub-metadata">
             <li><strong>Supervisor(s)</strong>: 

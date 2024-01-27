@@ -770,27 +770,48 @@ abbr[title] {
 
 /* sections lists */
 .publist {
-  list-style: disc;
+  list-style: none;
   padding: 0;
   padding-left: 1.5rem;
 }
 
 .publist-item {
   margin-bottom: 1.8rem;
+  background-color: var(--bg-darker);
+  padding: 0.5rem;
 }
 
 .publist-item p {
   margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
 }
 
-.publist-item button {
+/* .publist-item button {
   font-size: 1rem;
+  margin-right: 0.4rem;
+  padding: 0.25rem 0.5rem;
+} */
+
+.publist-links {
+  list-style: none;
+  font-style: italic;
+  font-size: 1.05rem;
+  padding-left: 0;
+}
+
+.publist-links li {
+  display: inline-block;
   margin-right: 0.4rem;
   padding: 0.35rem 0.5rem;
 }
 
+.publist-links li > a{
+  color: var(--accent);
+}
+
 /* customise only talks dates (inside p) */
-p > .publist-date {
+p > time {
   font-size: 1.1rem;
   word-spacing: -0.5px;
   margin-right: .5rem;
@@ -804,12 +825,19 @@ p > .publist-date {
   margin: 0 auto;
 }
 
-.pub-container button {
-  font-size: 1.1rem;
-  margin-top: .2rem;
-  margin-right: .4rem;
-  margin-bottom: 2rem;
+.pub-buttons {
+  list-style: none;
+  font-style: italic;
+  font-size: 1.05rem;
+  margin-bottom: 2.8rem;
+  padding-left: 0;
+}
+
+.pub-buttons li {
+  display: inline-block;
+  margin-right: 0.4rem;
   padding: 0.35rem 0.5rem;
+  background-color: var(--bg-darker);
 }
 
 .pub-metadata {
