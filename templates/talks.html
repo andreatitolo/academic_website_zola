@@ -20,20 +20,20 @@
             {% endfor %}
             - <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
           <p> <time datetime="{{ page.date }}">{{ page.date }}</time> - {{ page.extra.location }}</p>
-            <p>
-              {% if page.extra.url_slides %}
-                <a href="{{ page.permalink | safe }}{{ page.extra.url_slides }}"><button>Slides</button></a>
-              {% endif %}
-              {% if page.extra.url_code %}
-                <a href="{{ page.extra.url_code }}"><button>Code</button></a>
-              {% endif %}
-              {% if page.extra.url_doi %}
-                <a href="{{ page.extra.url_doi }}"><button>DOI</button></a>
-              {% endif %}
-              {% if page.extra.url_homepage %}
-                <a href="{{ page.extra.url_homepage }}"><button>Conference Website</button></a>
-              {% endif %}
-            </p>
+              <ul class="publist-links">
+                {% if page.extra.url_slides %}
+                  <li><a href="{{ page.permalink | safe }}{{ page.extra.url_slides }}">{{ pub_icons::render_pub_icon(icon="slide") }} Slides</a></li>
+                {% endif %}
+                {% if page.extra.url_code %}
+                  <li><a href="{{ page.extra.url_code }}">{{ pub_icons::render_pub_icon(icon="git") }} Code</a></li>
+                {% endif %}
+                {% if page.extra.url_doi %}
+                  <li><a href="{{ page.extra.url_doi }}">{{ pub_icons::render_pub_icon(icon="doi") }} DOI</a></li>
+                {% endif %}
+                {% if page.extra.url_homepage %}
+                  <li><a href="{{ page.extra.url_homepage }}">{{ pub_icons::render_pub_icon(icon="web") }} Conference Website</a></li>
+                {% endif %}
+              </ul>
           </li>
           {% endfor %}
         </ul>

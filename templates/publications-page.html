@@ -1,29 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="pub-container">
+<article class="pub-container">
     <h1>{{ page.title }}</h1>
-    <div class="pub-buttons">
+    <ul class="pub-buttons">
         {% if page.extra.url_preprint %}
-            <a href="{{ page.extra.url_preprint }}"><button>Preprint</button></a>
+            <li><a href="{{ page.extra.url_preprint }}">{{ pub_icons::render_pub_icon(icon="text") }}Preprint</a></li>
         {% endif %}
         {% if page.extra.url_local_pdf %}
-            <a href="{{ page.extra.url_local_pdf }}"><button>Self-archived PDF</button></a>
+            <li><a href="{{ page.extra.url_local_pdf }}">{{ pub_icons::render_pub_icon(icon="text") }}Self-archived PDF</a></li>
         {% endif %}
         {% if page.extra.url_pdf %}
-            <a href="{{ page.extra.url_pdf}}"><button>Publisher's PDF</button></a>
+            <li><a href="{{ page.extra.url_pdf}}">{{ pub_icons::render_pub_icon(icon="text") }}Publisher's PDF</a></li>
         {% endif %}
-        <a href="cite.bib"><button>Cite</button></a>
         {% if page.extra.url_code %}
-            <a href="{{ page.extra.url_code }}"><button>Code</button></a>
+            <li><a href="{{ page.extra.url_code }}">{{ pub_icons::render_pub_icon(icon="git") }}Code</a></li>
         {% endif %}
         {% if page.extra.url_dataset %}
-            <a href="{{ page.extra.url_dataset }}"><button>Dataset</button></a>
+            <li><a href="{{ page.extra.url_dataset }}">{{ pub_icons::render_pub_icon(icon="dataset") }}Dataset</a></li>
         {% endif %}
         {% if page.extra.url_doi %}
-            <a href="{{ page.extra.url_doi }}"><button>DOI</button></a>
+            <li><a href="{{ page.extra.url_doi }}">{{ pub_icons::render_pub_icon(icon="doi") }}DOI</a></li>
         {% endif %}
-    </div>
+    </ul>
     <div>
         <ul class="pub-metadata">
             <li><strong>Authors</strong>: 
@@ -71,6 +70,6 @@
             </nav>
         {% endif %}
     </article>
-</div>
+</article>
 
 {% endblock content %}

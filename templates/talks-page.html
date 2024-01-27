@@ -3,21 +3,21 @@
 {% block content %}
 <div class="pub-container">
     <h1>{{ page.title }}</h1>
-    <div class="pub-buttons">
+    <ul class="pub-buttons">
         {% if page.extra.url_slides %}
-            <a href="{{ page.extra.url_slides }}"><button>Slides</button></a>
+            <li><a href="{{ page.extra.url_slides }}">{{ pub_icons::render_pub_icon(icon="slide") }}Slides</a></li>
         {% endif %}
         {% if page.extra.url_code %}
-            <a href="{{ page.extra.url_code }}"><button>Code</button></a>
+            <li><a href="{{ page.extra.url_code }}">{{ pub_icons::render_pub_icon(icon="git") }}Code</a></li>
         {% endif %}
         {% if page.extra.url_doi %}
-            <a href="{{ page.extra.url_doi }}"><button>DOI</button></a>
+            <li><a href="{{ page.extra.url_doi }}">{{ pub_icons::render_pub_icon(icon="doi") }}DOI</a></li>
         {% endif %}
         {% if page.extra.url_homepage %}
-            <a href="{{ page.extra.url_homepage }}"><button>Conference Website</button></a>
+            <li><a href="{{ page.extra.url_homepage }}">{{ pub_icons::render_pub_icon(icon="web") }}Conference Website</a></li>
         {% endif %}
 
-    </div>
+    </ul>
     <div>
         <ul class="pub-metadata">
             <li><strong>Speaker(s)</strong>: 

@@ -27,31 +27,30 @@
                 {% endif %}
             {% endfor %}
             (<time>{{ year }}</time>) -
-            <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-            <p>
+            <a href="{{ page.permalink | safe }}"> {{ page.title }}</a>
+            <ul class="publist-links">
               {% if page.extra.url_preprint %}
-                <a href="{{ page.extra.url_preprint }}"><button>Preprint</button></a>
+                <li><a href="{{ page.extra.url_preprint }}"> {{ pub_icons::render_pub_icon(icon="text") }} Preprint</a></li>
               {% endif %}
               {% if page.extra.url_local_pdf %}
-                <a href="{{ page.permalink | safe }}{{ page.extra.url_local_pdf }}"><button>Self-archived PDF</button></a>
+                <li><a href="{{ page.permalink | safe }}{{ page.extra.url_local_pdf }}"> {{ pub_icons::render_pub_icon(icon="text") }} Self-archived PDF</a></li>
               {% endif %}
               {% if page.extra.url_pdf %}
-                <a href="{{ page.extra.url_pdf }}"><button>Publisher's PDF</button></a>
+                <li><a href="{{ page.extra.url_pdf }}"> {{ pub_icons::render_pub_icon(icon="text") }} Publisher's PDF</a></li>
               {% endif %}
-                <a href="{{ page.permalink | safe }}cite.bib"><button>Cite</button></a>
               {% if page.extra.url_code %}
-                <a href="{{ page.extra.url_code }}"><button>Code</button></a>
+                <li><a href="{{ page.extra.url_code }}">{{ pub_icons::render_pub_icon(icon="git") }} Code</a></li>
               {% endif %}
               {% if page.extra.url_dataset %}
-                <a href="{{ page.extra.url_dataset }}"><button>Dataset</button></a>
+                <li><a href="{{ page.extra.url_dataset }}">{{ pub_icons::render_pub_icon(icon="dataset") }}Dataset</a></li>
               {% endif %}
               {% if page.extra.url_doi %}
-                <a href="{{ page.extra.url_doi }}"><button>DOI</button></a>
+                <li><a href="{{ page.extra.url_doi }}">{{ pub_icons::render_pub_icon(icon="doi") }}DOI</a></li>
               {% endif %}
               {% if page.extra.url_doi %}
-                <a href="https://www.zotero.org/save?type=doi&q={{ page.extra.url_doi }}"><button><strong>Z</strong> Add to Zotero</button></a>
+                <li><a href="https://www.zotero.org/save?type=doi&q={{ page.extra.url_doi }}"> {{ pub_icons::render_pub_icon(icon="zotero") }} Add to Zotero</a></li>
               {% endif %}
-            </p>
+            </ul>
           </li>
           {% endfor %}
         </ul>
