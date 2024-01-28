@@ -13,15 +13,17 @@
   --navspacer-large:2rem;
   --navspacer-small:0.9rem;
   --transition: 200ms;
-  
+
   /* Default (light) theme */
   --bg: #faf8f6;
   --accent-bg: #fcfaf5;
   --bg-darker: #f3f3f3;
+  --pre-bg: #1c2532;
   --text: #362b2b;
   --text-light: #645050;
   --text-lighter: #eae5e5;
-  --text-dark: #070606;
+  --text-dark: #211c1c;
+  --text-darker: #070606;
   --text-hover: #faf8f6;
   --border: #a49989;
   --accent: #df5910;
@@ -42,10 +44,12 @@
     --bg: #211f1f;
     --accent-bg: #2b2b2b;
     --bg-darker: #282525;
+    --pre-bg: #f7f7f7;
     --text: #dcdcdc;
     --text-light: #ababab;
     --text-lighter: #646464;
     --text-dark: #f7f7f7;
+    --text-darker: #f7f7f7;
     --text-hover: #1f1f1f;
     --border: #383735;
     --accent: #ffb300;
@@ -258,7 +262,7 @@ header > div > nav a {
 
 header > div > nav a:hover {
   cursor: pointer;
-  color: var(--text-dark);
+  color: var(--text-darker);
 }
 
 header > div > nav a:before {
@@ -301,7 +305,7 @@ a:hover {
 }
 
 footer > p a {
-  color: var(--text-dark);
+  color: var(--text-darker);
 }
 
 
@@ -865,6 +869,24 @@ p > time {
 
 .pub-author:hover {
   color: var(--accent);
+}
+
+/* bibtex code */
+section:has(.bib-data){
+  padding-bottom: 0;
+}
+.bib-data {
+  background-color: var(--pre-bg);
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.bib-data code {
+  color: var(--accent-bg);
+}
+
+.doi-link {
+  text-align: center;
 }
 
 .page-nav {
