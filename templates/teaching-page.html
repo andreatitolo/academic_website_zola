@@ -5,6 +5,10 @@
     <h1>{{ page.title }}</h1>
     <ul class="pub-buttons">
         {% for link in page.extra.links %}
+        {# export global variables to use in the page #}
+        {% if link.name == "Website" and link.url is defined %}
+            {% set_global website_link = link.url %}
+        {% endif %}
         {% if link.url is containing("github.com")%}
         {% set icon_name = "github" %}
         {% elif link.url is containing("codeberg.org")%}
@@ -25,8 +29,8 @@
             {% endfor %} </li>
             <li><strong>Start Date</strong>: <time datetime="{{ page.extra.start_date }}">{{ page.extra.start_date }}</time></li>
             <li><strong>End Date</strong>: <time datetime="{{ page.extra.end_date }}">{{ page.extra.end_date }}</time></li>
-            {% if page.extra.url_website %}
-            <li><strong>Website</strong>: <a href="{{page.extra.url_website}}">{{page.extra.url_website}}</a> </li>
+            {% if website_link %}
+            <li><strong>Website</strong>: <a href="{{website_link}}">{{website_link}}</a> </li>
             {% endif %}
             <li><strong>Language</strong>: <i>{{page.extra.language}}</i> </li>
             <li><strong>Tags</strong>: 
