@@ -4,7 +4,16 @@
 <article class="pub-container">
     <h1>{{ page.title }}</h1>
     <ul class="pub-buttons">
-        {{ pub_icons::render_pub_icon() }}
+        {% for link in page.extra.links %}
+            {% if link.name == "Self-archived PDF"%}
+            <li><a href="{{ page.permalink | safe }}{{ link.url }}">{{icons::render_icon(icon=link.icon)}}{{ link.name }}</a></li>
+            {% else %}
+            <li><a href="{{ link.url }}">{{icons::render_icon(icon=link.icon)}}{{ link.name }}</a></li>
+            {% if link.name == "DOI" and link.url is defined %}
+                <li><a href="https://www.zotero.org/save?type=doi&q={{ link.url }}">{{icons::render_icon(icon="zotero")}}Add to Zotero</a></li>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
     </ul>
     <div>
         <ul class="pub-metadata">

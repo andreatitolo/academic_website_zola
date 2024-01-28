@@ -15,6 +15,8 @@ authors = [ "A. Titolo" ]
 event = "4th Mesopotamian Archaeology Conference"
 location = "University of Qadisiyah, Diwaniyeh (Iraq)"
 description = "Talk presented at the Mesopotamian Archaeology Conference at the University of Qadisiyah, Diwaniyeh (Iraq). Slides made with Quarto and Revealjs."
-url_code = "https://codeberg.org/titoloandrea/QadisyahLAC"
-url_slides = "TitoloMAC2023.html"
+links = [
+    {url = "TitoloMAC2023.html", name = "Slides", icon = "slides"},
+    {url = "https://codeberg.org/titoloandrea/QadisyahLAC", name = "Code", icon = "code"},
+]
 +++

@@ -16,5 +16,8 @@ authors = [ "Paola Sconzo", "Francesca Simi", "A. Titolo" ]
 event = "13th International Conference on Archaeology of the Ancient Near East (ICAANE)"
 location = "University of Copenhagen, Faculty of Humanities"
 description = "Talk with Prof. Paola Sconzo (University of Palermo), Dr. Francesca Simi (University of Udine) presented at the 13th ICAANE conference at the University of Copenhagen (Denmark). Slides made with Quarto and Revealjs."
-url_homepage = "https://eventsignup.ku.dk/icaane13"
+url_homepage = ""
+links = [
+    {url = "https://eventsignup.ku.dk/icaane13", name = "Conference Website", icon = "web"},
+]
 +++

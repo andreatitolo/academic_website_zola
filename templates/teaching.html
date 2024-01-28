@@ -19,7 +19,9 @@
             - <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
             <p><time datetime="{{start_date}}">{{ start_date }}</time> - <time datetime= "{{end_date}}">{{ end_date }}</time></p>
               <ul class="publist-links">
-                {{ pub_icons::render_pub_icon() }}
+                {% for link in page.extra.links %}
+                      <li><a href="{{ link.url }}">{{icons::render_icon(icon=link.icon)}}{{ link.name }}</a></li>
+                {% endfor %}
               </ul>
           </li>
           {% endfor %}

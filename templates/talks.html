@@ -21,7 +21,9 @@
             - <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
           <p> <time datetime="{{ page.date }}">{{ page.date }}</time> - {{ page.extra.location }}</p>
               <ul class="publist-links">
-                {{ pub_icons::render_pub_icon() }}
+                {% for link in page.extra.links %}
+                    <li><a href="{{ link.url }}">{{icons::render_icon(icon=link.icon)}}{{ link.name }}</a></li>
+                {% endfor %}
               </ul>
           </li>
           {% endfor %}

@@ -4,7 +4,9 @@
 <div class="pub-container">
     <h1>{{ page.title }}</h1>
     <ul class="pub-buttons">
-        {{ pub_icons::render_pub_icon() }}
+        {% for link in page.extra.links %}
+            <li><a href="{{ link.url }}">{{icons::render_icon(icon=link.icon)}}{{ link.name }}</a></li>
+        {% endfor %}
     </ul>
     <div>
         <ul class="pub-metadata">

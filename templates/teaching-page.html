@@ -4,12 +4,9 @@
 <div class="pub-container">
     <h1>{{ page.title }}</h1>
     <ul class="pub-buttons">
-        {% if page.extra.url_website %}
-            <li><a href="{{ page.extra.url_website }}">{{ pub_icons::render_pub_icon(icon="web") }}Website</a></li>
-        {% endif %}
-        {% if page.extra.url_repo %}
-            <li><a href="{{ page.extra.url_code }}">{{ pub_icons::render_pub_icon(icon="git") }}Repository</a></li>
-        {% endif %}
+        {% for link in page.extra.links %}
+            <li><a href="{{ link.url }}">{{icons::render_icon(icon=link.icon)}}{{ link.name }}</a></li>
+        {% endfor %}
     </ul>
     <div>
         <ul class="pub-metadata">

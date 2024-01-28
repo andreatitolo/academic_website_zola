@@ -15,6 +15,7 @@ authors = [ "G. Iacobucci", "A. Titolo" ]
 event = "13th International Conference on Archaeology of the Ancient Near East (ICAANE)"
 location = "University of Copenhagen, Faculty of Humanities"
 description = "Talk with Dr. Giulia Iacobucci (Sapienza University) presented at the 13th ICAANE conference at the University of Copenhagen (Denmark). Slides made with Quarto and Revealjs."
-url_code = "https://codeberg.org/titoloandrea/QadisyahLAC"
-url_homepage = "https://eventsignup.ku.dk/icaane13"
+links = [
+    {url = "https://eventsignup.ku.dk/icaane13", name = "Conference Website", icon = "web"},
+]
 +++
