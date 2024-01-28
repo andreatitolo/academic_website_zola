@@ -31,7 +31,13 @@
                 {% else %}
                 {% set icon_name = link.icon %}
                 {% endif %}
-                    <li><a href="{{ link.url }}">{{icons::render_icon(icon=icon_name)}}{{ link.name }}</a></li>
+                {# replace url path for local files #}
+                {% if link.name == "Slides" and link.url is ending_with(".html")%}
+                    {% set url = page.permalink ~ link.url %}
+                {% else %}
+                    {% set url = link.url %}
+                {% endif %}
+                    <li><a href="{{ url }}">{{icons::render_icon(icon=icon_name)}}{{ link.name }}</a></li>
                 {% endfor %}
               </ul>
           </li>
