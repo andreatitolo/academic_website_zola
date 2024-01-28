@@ -5,11 +5,11 @@
     <h1>{{ page.title }}</h1>
     <ul class="pub-buttons">
         {% for link in page.extra.links %}
-            {% if link.url is containing("github.com")%}
+            {% if link.url is containing("github.com") and link.name != "Dataset" %}
                 {% set icon_name = "github" %}
-            {% elif link.url is containing("codeberg.org")%}
+            {% elif link.url is containing("codeberg.org") and link.name != "Dataset" %}
                 {% set icon_name = "codeberg" %}
-            {% elif link.url is containing("forgejo")%}
+            {% elif link.url is containing("forgejo") and link.name != "Dataset" %}
                 {% set icon_name = "forgejo" %}
             {% elif link.url is ending_with(".pdf")%}
                 {% set icon_name = "text" %}
