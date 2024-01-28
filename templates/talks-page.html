@@ -4,19 +4,7 @@
 <div class="pub-container">
     <h1>{{ page.title }}</h1>
     <ul class="pub-buttons">
-        {% if page.extra.url_slides %}
-            <li><a href="{{ page.extra.url_slides }}">{{ pub_icons::render_pub_icon(icon="slide") }}Slides</a></li>
-        {% endif %}
-        {% if page.extra.url_code %}
-            <li><a href="{{ page.extra.url_code }}">{{ pub_icons::render_pub_icon(icon="git") }}Code</a></li>
-        {% endif %}
-        {% if page.extra.url_doi %}
-            <li><a href="{{ page.extra.url_doi }}">{{ pub_icons::render_pub_icon(icon="doi") }}DOI</a></li>
-        {% endif %}
-        {% if page.extra.url_homepage %}
-            <li><a href="{{ page.extra.url_homepage }}">{{ pub_icons::render_pub_icon(icon="web") }}Conference Website</a></li>
-        {% endif %}
-
+        {{ pub_icons::render_pub_icon() }}
     </ul>
     <div>
         <ul class="pub-metadata">

@@ -29,27 +29,7 @@
             (<time>{{ year }}</time>) -
             <a href="{{ page.permalink | safe }}"> {{ page.title }}</a>
             <ul class="publist-links">
-              {% if page.extra.url_preprint %}
-                <li><a href="{{ page.extra.url_preprint }}"> {{ pub_icons::render_pub_icon(icon="text") }} Preprint</a></li>
-              {% endif %}
-              {% if page.extra.url_local_pdf %}
-                <li><a href="{{ page.permalink | safe }}{{ page.extra.url_local_pdf }}"> {{ pub_icons::render_pub_icon(icon="text") }} Self-archived PDF</a></li>
-              {% endif %}
-              {% if page.extra.url_pdf %}
-                <li><a href="{{ page.extra.url_pdf }}"> {{ pub_icons::render_pub_icon(icon="text") }} Publisher's PDF</a></li>
-              {% endif %}
-              {% if page.extra.url_code %}
-                <li><a href="{{ page.extra.url_code }}">{{ pub_icons::render_pub_icon(icon="git") }} Code</a></li>
-              {% endif %}
-              {% if page.extra.url_dataset %}
-                <li><a href="{{ page.extra.url_dataset }}">{{ pub_icons::render_pub_icon(icon="dataset") }}Dataset</a></li>
-              {% endif %}
-              {% if page.extra.url_doi %}
-                <li><a href="{{ page.extra.url_doi }}">{{ pub_icons::render_pub_icon(icon="doi") }}DOI</a></li>
-              {% endif %}
-              {% if page.extra.url_doi %}
-                <li><a href="https://www.zotero.org/save?type=doi&q={{ page.extra.url_doi }}"> {{ pub_icons::render_pub_icon(icon="zotero") }} Add to Zotero</a></li>
-              {% endif %}
+              {{ pub_icons::render_pub_icon() }}
             </ul>
           </li>
           {% endfor %}
