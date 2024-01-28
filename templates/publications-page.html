@@ -16,7 +16,13 @@
             {% else %}
                 {% set icon_name = link.icon %}
             {% endif %}
-            <li><a href="{{ link.url }}">{{icons::render_icon(icon=icon_name)}}{{ link.name }}</a></li>
+            {# replace url path for local files #}
+            {% if link.name == "Self-archived PDF" and link.url is ending_with(".pdf")%}
+                {% set url = page.permalink ~ link.url %}
+            {% else %}
+                {% set url = link.url %}
+            {% endif %}
+            <li><a href="{{ url }}">{{icons::render_icon(icon=icon_name)}}{{ link.name }}</a></li>
             {% if link.name == "DOI" and link.url is defined %}
                 <li><a href="https://www.zotero.org/save?type=doi&q={{ link.url }}">{{icons::render_icon(icon="zotero")}}Add to Zotero</a></li>
             {% endif %}
