@@ -35,31 +35,29 @@
             <li><a href="{{ url }}">{{icons::render_icon(icon=icon_name)}}{{ link.name }}</a></li>
         {% endfor %}
     </ul>
-    <div>
-        <ul class="pub-metadata">
-            <li><strong>Authors</strong>: 
-                {% for author in page.taxonomies.authors %} 
-                    {% if not loop.last %}
-                       <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>,
-                    {% elif loop.last %}
-                        <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
-                    {% endif %}
-                {% endfor %} 
-            </li>
-            <li><strong>Published</strong>: <time datetime="{{ page.date }}">{{ page.date }}</time></li>
-            <li><strong>Type</strong>: {{page.extra.publication_type}} </li>
-            <li><strong>Publication</strong>: {{page.extra.publication}} </li>
-            <li><strong>Tags</strong>: 
-                {% for tag in page.taxonomies.tags %} 
-                    {% if not loop.last %}
-                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a>,
-                    {% elif loop.last %}
-                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a> 
-                    {% endif %}
-                {% endfor %}
-            </li>
-        </ul>
-    </div>
+    <ul class="pub-metadata">
+        <li><strong>Authors</strong>: 
+            {% for author in page.taxonomies.authors %} 
+                {% if not loop.last %}
+                   <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>,
+                {% elif loop.last %}
+                    <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
+                {% endif %}
+            {% endfor %} 
+        </li>
+        <li><strong>Published</strong>: <time datetime="{{ page.date }}">{{ page.date }}</time></li>
+        <li><strong>Type</strong>: {{page.extra.publication_type}} </li>
+        <li><strong>Publication</strong>: {{page.extra.publication}} </li>
+        <li><strong>Tags</strong>: 
+            {% for tag in page.taxonomies.tags %} 
+                {% if not loop.last %}
+                    <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a>,
+                {% elif loop.last %}
+                    <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a> 
+                {% endif %}
+            {% endfor %}
+        </li>
+    </ul>
     <article> 
         {% if page.extra.abstract %} 
             {{ page.extra.abstract }}

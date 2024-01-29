@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="pub-container">
+<article class="pub-container">
     <h1>{{ page.title }}</h1>
     <ul class="pub-buttons">
         {% for link in page.extra.links %}
@@ -23,33 +23,29 @@
             <li><a href="{{ link.url }}">{{icons::render_icon(icon=icon_name)}}{{ link.name }}</a></li>
         {% endfor %}
     </ul>
-    <div>
-        <ul class="pub-metadata">
-            <li><strong>Speaker(s)</strong>: 
-                {% for author in page.taxonomies.authors %} 
-                <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
-                {% endfor %} 
-            </li>
-            <li><strong>Date</strong>: <time datetime="{{ page.date }}">{{ page.date }}</time></li>
-            <li><strong>Event</strong>: {{page.extra.event}} </li>
-            <li><strong>Location</strong>: {{page.extra.location}} </li>
-            <li><strong>Tags</strong>: 
-                {% for tag in page.taxonomies.tags %} 
-                    {% if not loop.last %}
-                       <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a>,
-                    {% elif loop.last %}
-                        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a>
-                    {% endif %}
-                {% endfor %}
-            </li>
-        </ul>
-    </div>
+    <ul class="pub-metadata">
+        <li><strong>Speaker(s)</strong>: 
+            {% for author in page.taxonomies.authors %} 
+            <a href="{{ get_taxonomy_url(kind="authors", name=author) }}" class="pub-author">{{ author }}</a>
+            {% endfor %} 
+        </li>
+        <li><strong>Date</strong>: <time datetime="{{ page.date }}">{{ page.date }}</time></li>
+        <li><strong>Event</strong>: {{page.extra.event}} </li>
+        <li><strong>Location</strong>: {{page.extra.location}} </li>
+        <li><strong>Tags</strong>: 
+            {% for tag in page.taxonomies.tags %} 
+                {% if not loop.last %}
+                   <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a>,
+                {% elif loop.last %}
+                    <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="pub-tag">{{ tag }}</a>
+                {% endif %}
+            {% endfor %}
+        </li>
+    </ul>
     <article>
-
         {% if page.extra.abstract %} 
             {{ page.extra.abstract }}
         {% endif %}
-
         {%- if page.extra.url_slides %}
             <p class="notice">
                 {% if page.extra.url_slides is ending_with(".html") %}
@@ -61,9 +57,7 @@
                 {% endif %}
                 </p>
         {%- endif %}
-
         {{ page.content | safe }}
-
         {% if page.lower or page.higher %}
             <nav class="page-nav">
             {% if page.higher %}
@@ -80,7 +74,6 @@
             {% endif %}
             </nav>
         {% endif %}
-        
     </article>
-</div>
+</article>
 {% endblock content %}
