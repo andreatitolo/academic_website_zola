@@ -750,6 +750,9 @@ abbr[title] {
 .network-item > a {
   color: var(--text);
 }
+.network-item > a:hover {
+  color: var(--accent);
+}
 
 #background h3 {
   font-weight: 700;
