@@ -7,12 +7,12 @@
 
 <p>Preferred method is the <a href="mailto:{{ config.extra.email }}">Email</a>, but other methods are listed below:</p>
 
-<ul class="">
+<ul>
 {% set social_items = config.extra.social_buttons -%}
-{% set loop_break = 5 -%}
+{% set loop_break = 6 -%}
 {% for item in social_items | reverse -%}
 {% if loop.index0 == loop_break %}{% break %}{% endif %}
-<li class="network-item"><a href="{{ item.link }}">{{ item.name | capitalize}}</a></li>
+<li><a href="{{ item.link }}">{{ item.name | capitalize}}</a></li>
 {% endfor -%}
 </ul>
 
