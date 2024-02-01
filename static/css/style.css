@@ -782,7 +782,8 @@ abbr[title] {
 .publist-item {
   margin-bottom: 1.8rem;
   background-color: var(--bg-darker);
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 20px;
 }
 
 .publist-item p {
