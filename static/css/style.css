@@ -505,11 +505,7 @@ figcaption {
   margin-bottom: 1rem;
 }
 
-
 /* code */
-
-
-
 /* Use mono font for code elements */
 code,
 pre,
@@ -527,7 +523,6 @@ kbd {
   border-radius: var(--standard-border-radius);
   padding: 0.1rem 0.4rem;
 }
-
 
 pre {
   background-color: var(--accent-bg);
@@ -548,8 +543,8 @@ pre code {
   padding: 0;
 }
 
- /* Code blocks */
- pre[class*="language-"] {
+/* Code blocks */
+pre[class*="language-"] {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
@@ -624,7 +619,6 @@ abbr[title] {
 }
 
 /* 4. Classes –––––––––––––––––––––––––––––––––––––– */
-
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
   /* clip: rect(0 0 0 0); */
@@ -795,12 +789,6 @@ abbr[title] {
   font-size: 1.1rem;
 }
 
-/* .publist-item button {
-  font-size: 1rem;
-  margin-right: 0.4rem;
-  padding: 0.25rem 0.5rem;
-} */
-
 .publist-links {
   list-style: none;
   font-style: italic;
@@ -952,13 +940,6 @@ section:has(.bib-data){
   .pub-container {
     max-width: 920px;
   }
-
-  /* make the header container smaller on larger screens */
-  /* .header-container {
-    max-width: 60rem;
-    margin: 0px auto;
-    padding: 0;
-  } */
 }
 
 /* Taxonomies */
