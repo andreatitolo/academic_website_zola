@@ -748,8 +748,13 @@ abbr[title] {
   color: var(--accent);
 }
 
+#bio h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 #background h3 {
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 1.5rem;
   font-size: 1.5rem;
 }
