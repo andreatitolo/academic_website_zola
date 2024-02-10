@@ -12,13 +12,13 @@
             <h2>{{ config.author }}</h2>
             <h3>{{ config.extra.role }}</h3>
             <h3>{{ config.extra.institution }}</h3>
-            <small>
-              <p>
+            <p>
+              <small>
                 <a href="https://webring.archaeo.social/previous?host=www.andreatitolo.com">←</a>
                 <a href="https://webring.archaeo.social/">Archaeoring</a> | <a href="https://webring.archaeo.social/random">Random</a>
                 <a href="https://webring.archaeo.social/next?host=www.andreatitolo.com">→</a>
-              </p>
-            </small>
+              </small>
+            </p>
           </div>
           <ul class="network">            
               {{macros::render_social_icons()}}
@@ -26,7 +26,8 @@
         </div>
       </div>
       <div class="col col-lg-8">
-          <article>
+          <article id="bio">
+            <h1>About</h1>
             {{section.content | safe }}
           </article>
           <div class="row" id="background">
