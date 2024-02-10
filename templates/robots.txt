@@ -1,10 +1,7 @@
-# Block any AI or GPT stuff
 User-Agent: ChatGPT-User
 User-Agent: GPTBot
 User-agent: Google-Extended
 User-agent: CCBot
-Disallow: /
-# Block various ads and toxic socials
 User-Agent: FacebookExternalHit
 User-Agent: Twitterbot
 User-Agent: LinkedInBot
