@@ -36,37 +36,6 @@
   --disabled: #efefef;
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  :root,
-  ::backdrop {
-    color-scheme: dark;
-    --bg: #211f1f;
-    --accent-bg: #2b2b2b;
-    --bg-darker: #282525;
-    --pre-bg: #f7f7f7;
-    --text: #dcdcdc;
-    --text-light: #ababab;
-    --text-lighter: #646464;
-    --text-dark: #f7f7f7;
-    --text-darker: #f7f7f7;
-    --text-hover: #1f1f1f;
-    --border: #383735;
-    --accent: #ffb300;
-    --accent-underline: #ebdec0;
-    --accent-light: #ffb300;
-    --accent-hover: #ffb300;
-    --code: #f06292;
-    --preformatted: #ccc;
-    --disabled: #111;
-  }
-  /* Add a bit of transparency so light media isn't so glaring in dark mode */
-  img,
-  video {
-    opacity: 0.8;
-  }
-}
-
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Reset box-sizing */
