@@ -24,3 +24,45 @@ status = 301
 from = "/publication/*"
 to = "/publications/:splat"
 status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "deny"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    Strict-Transport-Security = '''
+      max-age=31536000;
+      includeSubDomains;
+      preload
+    '''
+    Content-Security-Policy = '''
+      default-src 'self' https://*.archaeoramblings.com;
+      style-src 'self' https://*.archaeoramblings.com 'unsafe-inline';
+      img-src 'self' https://*.archaeoramblings.com;
+      script-src 'self' https://*.archaeoramblings.com;
+      frame-src 'self' https://*.archaeoramblings.com;
+	  connect-src 'self' https://*.archaeoramblings.com;
+	  base-uri 'self' https://*.archaeoramblings.com;
+	  form-action 'self' https://*.archaeoramblings.com
+    '''
+    Permissions-Policy = '''
+      accelerometer=(),
+      ambient-light-sensor=(),
+      autoplay=(),
+      camera=(),
+      encrypted-media=(),
+      fullscreen=(),
+      geolocation=(),
+      gyroscope=(),
+      magnetometer=(),
+      microphone=(),
+      midi=(),
+      payment=(),
+      picture-in-picture=(),
+      speaker=(),
+      usb=(),
+      vibrate=(),
+      vr=()
+    '''
