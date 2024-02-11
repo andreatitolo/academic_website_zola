@@ -12,4 +12,5 @@ Some deserved thanks in the form of an incomplete list (to be updated) to people
 - [Daniel Sockwell](https://www.codesections.com/) for the [Even](https://getzola.github.io/even) theme, which inspired the taxonomies single page template and style.
 - [Cydave](https://github.com/cydave) for the [Zola Papermod](https://cydave.github.io/zola-theme-papermod/) theme, which inspired the taxonomies list template, and for the social icon macro.
 - [Simpleicons](https://simpleicons.org/) for the forgejo icon.
+- [Feather](https://feathericons.com/) for most of the icons used throughout the website.
 
