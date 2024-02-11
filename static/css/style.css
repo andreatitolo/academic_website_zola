@@ -26,8 +26,8 @@
   --text-darker: #070606;
   --text-hover: #faf8f6;
   --border: #a49989;
-  --accent: #d84c00;
-  --accent-underline: #ed8953;
+  --accent: #A70202;
+  --accent-underline: #b32222;
   --accent-light: #ed8953;
   --accent-hover: #dd7327;
   --code: #c6461c;
@@ -272,7 +272,7 @@ a:visited {
 a:hover {
   color: var(--accent);
   text-decoration-color: var(--accent);
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 1.8px;
 }
 
 footer > p a {
@@ -749,7 +749,7 @@ abbr[title] {
 .publist {
   list-style: none;
   padding: 0;
-  padding-left: 1.5rem;
+  /* padding-left: 1.5rem; */
 }
 
 .publist-item {
