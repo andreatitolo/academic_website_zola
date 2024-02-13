@@ -44,9 +44,14 @@
         {% endfor %}
         <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}"/>
         <id>{{ page.permalink | safe }}</id>
-        {% if page.summary %}
-        <summary type="html">{{ page.summary }}</summary>
-        {% elif page.extra.abstract %}
+        {% if page.summary or page.description %}
+          {% if page.summary %}
+            <summary type="html">{{ page.summary }}</summary>
+          {% elif page.description %}
+            <summary type="html">{{ page.description }}</summary>
+          {% endif %}
+        {% endif %}
+        {% if page.extra.abstract %}
         <content type="html">{{ page.extra.abstract }}</content>
         {% else %}
         <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content }}</content>

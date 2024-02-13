@@ -100,6 +100,10 @@
   main > ul:not(.nested) > li > h3 > a[href]:focus {
     text-decoration: underline;
   }
+  main > ul:not(.nested) > li > h3 > p > small {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
   main > ul:not(.nested) > li > time {
     display: flex;
     font-size: 0.8em;
