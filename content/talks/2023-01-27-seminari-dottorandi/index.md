@@ -1,5 +1,6 @@
 +++
 title = "Paesaggi sommersi. Metodologie di monitoraggio, prevenzione e salvaguardia dei siti a rischio del bacino della diga di Mosul, Irak. Il progetto RE-Land."
+description = "Section of a larger talk presented at the Seminar series at the University of Palermo."
 date = "2023-01-27"
 [taxonomies]
 tags = [
@@ -13,7 +14,6 @@ authors = [ "Paola Sconzo", "Francesca Simi", "A. Titolo" ]
 [extra]
 event = "Ciclo di Seminari Scienze Applicate ai Beni Culturali"
 location = "Università di Palermo, Dipartimento Culture e Società"
-description = "Section of a larger talk presented at the Seminar series at the University of Palermo."
 links = [
     {url = "https://titoloandrea.codeberg.page/SeminarioPalermoJan2023/@pages/TitoloPalermo2023.html", name = "Slides", icon = "slides"},
     {url = "https://codeberg.org/titoloandrea/SeminarioPalermoJan2023", name = "Code", icon = "code"},
