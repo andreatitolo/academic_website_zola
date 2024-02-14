@@ -5,26 +5,6 @@ command = "zola build"
 [build.environment]
 ZOLA_VERSION = "0.18.0"
 
-[[redirects]]
-from = "/event"
-to = "/talks"
-status = 301
-
-[[redirects]]
-from = "/talk/*"
-to = "/talks/:splat"
-status = 301
-
-[[redirects]]
-from = "/publication"
-to = "/publications"
-status = 301
-
-[[redirects]]
-from = "/publication/*"
-to = "/publications/:splat"
-status = 301
-
 [[headers]]
   for = "/*"
   [headers.values]
