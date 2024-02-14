@@ -32,12 +32,19 @@
                 {% set icon_name = link.icon %}
                 {% endif %}
                 {# replace url path for local files #}
-                {% if link.name == "Slides" and link.url is ending_with(".html")%}
+                {% if link.name == "Slides" and link.url is ending_with(".html") or link.url is ending_with(".pdf")%}
                     {% set url = page.permalink ~ link.url %}
                 {% else %}
                     {% set url = link.url %}
                 {% endif %}
-                    <li><a href="{{ url }}">{{icons::render_icon(icon=icon_name)}}{{ link.name }}</a></li>
+                {% if link.name == "Slides" and link.url is ending_with(".html") %}
+                  {% set name = link.name ~ " (HTML)" %}
+                {% elif link.name == "Slides" and link.url is ending_with(".pdf") %}
+                  {% set name = link.name ~ " (PDF)" %}
+                {% else %}
+                  {% set name = link.name %}
+                {% endif %}
+                    <li><a href="{{ url }}">{{icons::render_icon(icon=icon_name)}}{{ name }}</a></li>
                 {% endfor %}
               </ul>
           </li>
