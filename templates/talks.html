@@ -31,12 +31,6 @@
                 {% else %}
                 {% set icon_name = link.icon %}
                 {% endif %}
-                {# replace url path for local files #}
-                {% if link.name == "Slides" and link.url is ending_with(".html") or link.url is ending_with(".pdf")%}
-                    {% set url = page.permalink ~ link.url %}
-                {% else %}
-                    {% set url = link.url %}
-                {% endif %}
                 {% if link.name == "Slides" and link.url is ending_with(".html") %}
                   {% set name = link.name ~ " (HTML)" %}
                 {% elif link.name == "Slides" and link.url is ending_with(".pdf") %}
@@ -44,7 +38,11 @@
                 {% else %}
                   {% set name = link.name %}
                 {% endif %}
-                    <li><a href="{{ url }}">{{icons::render_icon(icon=icon_name)}}{{ name }}</a></li>
+                {% if link.url is ending_with(".html") or link.url is ending_with(".pdf") %}
+                    <li><a href="{{ get_url(path="slides", trailing_slash=true) ~ link.url }}">{{icons::render_icon(icon=icon_name)}}{{ name }}</a></li>
+                {% else %}
+                    <li><a href="{{ link.url }}">{{icons::render_icon(icon=icon_name)}}{{ name }}</a></li>
+                {% endif %}
                 {% endfor %}
               </ul>
           </li>
