@@ -5,6 +5,26 @@ command = "zola build"
 [build.environment]
 ZOLA_VERSION = "0.18.0"
 
+[[redirects]]
+from = "/event"
+to = "/talks"
+status = 301
+
+[[redirects]]
+from = "/talk/*"
+to = "/talks/:splat"
+status = 301
+
+[[redirects]]
+from = "/publication"
+to = "/publications"
+status = 301
+
+[[redirects]]
+from = "/publication/*"
+to = "/publications/:splat"
+status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -18,14 +38,14 @@ ZOLA_VERSION = "0.18.0"
       preload
     '''
     Content-Security-Policy = '''
-      default-src 'self' https://*.archaeoramblings.com;
-      style-src 'self' https://*.archaeoramblings.com 'unsafe-inline';
-      img-src 'self' https://*.archaeoramblings.com;
-      script-src 'self' https://*.archaeoramblings.com;
-      frame-src 'self' https://*.archaeoramblings.com;
-	  connect-src 'self' https://*.archaeoramblings.com;
-	  base-uri 'self' https://*.archaeoramblings.com;
-	  form-action 'self' https://*.archaeoramblings.com
+      default-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
+      style-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline';
+      img-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline';
+      script-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdnjs.cloudflare.com cdn.mathjax.org;
+      frame-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
+	    connect-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
+	    base-uri 'self' https://*.animated-sherbet-085d6f.netlify.app;
+	    form-action 'self' https://*.animated-sherbet-085d6f.netlify.app
     '''
     Permissions-Policy = '''
       accelerometer=(),
