@@ -15,7 +15,7 @@ authors = [ "Paola Sconzo", "Francesca Simi", "A. Titolo" ]
 event = "Ciclo di Seminari Scienze Applicate ai Beni Culturali"
 location = "Università di Palermo, Dipartimento Culture e Società"
 links = [
-    {url = "https://titoloandrea.codeberg.page/SeminarioPalermoJan2023/@pages/TitoloPalermo2023.html", name = "Slides", icon = "slides"},
+    {url = "TitoloPalermo2023.html", name = "Slides", icon = "slides"},
     {url = "https://codeberg.org/titoloandrea/SeminarioPalermoJan2023", name = "Code", icon = "code"},
     {url = "https://www.unipa.it/dipartimenti/cultureesocieta/06fae2e0-9c9c-11ed-823b-005056010139/", name = "Conference Website", icon = "web"},
 ]
