@@ -16,7 +16,7 @@ authors = [ "A. Titolo" ]
 event = "4th Mesopotamian Archaeology Conference"
 location = "University of Qadisiyah, Diwaniyeh (Iraq)"
 links = [
-    {url = "TitoloMAC2023.html", name = "Slides", icon = "slides"},
+    {url = "2023-03-09-qadisiyah-mac/TitoloLAC2023.html", name = "Slides", icon = "slides", legacy_url = "true"},
     {url = "https://codeberg.org/titoloandrea/QadisyahLAC", name = "Code", icon = "code"},
 ]
 +++
