@@ -41,7 +41,7 @@ status = 301
       default-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
       style-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' data:;
       img-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' data:;
-      script-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdnjs.cloudflare.com cdn.mathjax.org;
+      script-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' cdn.jsdelivr.net cdnjs.cloudflare.com cdn.mathjax.org;
       frame-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
 	    connect-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
 	    base-uri 'self' https://*.animated-sherbet-085d6f.netlify.app;
