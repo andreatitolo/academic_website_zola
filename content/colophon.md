@@ -14,30 +14,30 @@ The design of the website is mostly based on the older versions of the [Academic
 ## Code
 
 This site uses the following:
-- Markdown
-- HTML ([Validated](https://validator.w3.org/nu/?doc=https://www.andreatitolo.com/))
-- CSS ([Validated](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fwww.andreatitolo.com&usermedium=all&vextwarning=&warning=1) - inspired by [Simple CSS](https://simplecss.org/))
-- [Code Repository on Github](https://github.com/andreatitolo/andreatitolo_web)
-- Hosted on Netlify
+- Markdown.
+- HTML ([Validated](https://validator.w3.org/nu/?doc=https://animated-sherbet-085d6f.netlify.app)).
+- CSS ([Validated](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanimated-sherbet-085d6f.netlify.app&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=it) - inspired by [Classless](https://classless.de) and [Simple CSS](https://simplecss.org/)).
+- [Code Repository on Forgejo](https://archaeo.cc/forgejo/andreatitolo/academic_website_zola).
+- Hosted on Netlify.
 
 ### Fonts and visuals
 
-- SVG logo
+- SVG for logo and icons (using [Feather](https://feathericons.com/) and [Simpleicons](https://simpleicons.org/))
 - Fonts:
-  - [Humanist](https://github.com/system-fonts/modern-font-stacks#humanist) for body, header, and footer text.
-  - [Old Style](https://github.com/system-fonts/modern-font-stacks#old-style) for headers.
+  - [Classical Humanist](https://github.com/system-fonts/modern-font-stacks?tab=readme-ov-file#classical-humanist) for body.
+  - [Old Style](https://github.com/system-fonts/modern-font-stacks#old-style) for headings, header and footer.
   - [Monospace Code](https://github.com/system-fonts/modern-font-stacks#monospace-code) for code.
   - As of 2023-08-29, this website uses the [Catppuccin palette](https://github.com/catppuccin/palette) palette, with some tweaks to improve legibility.
 
 ## Sustainability
 
-- [Lighthouse Report](https://pagespeed.web.dev/analysis/https-www-andreatitolo-com/6wpwy9vn6z?form_factor=desktop)
-- Homepage loads in 0.8 seconds and weights less than 20kb (uncompressed).
-- Site uncompressed size is 18.7kb.
-- 0.00g of CO2 [produced every time someone visits this web page](https://www.websitecarbon.com/website/andreatitolo-com/).
-- 100 score on [Ecograder](https://ecograder.com/report/uVJ0MKte3W5ZEqFZRqzyQyz9).
+- [Lighthouse Report](https://pagespeed.web.dev/analysis/https-animated-sherbet-085d6f-netlify-app/bv3evctz4r?form_factor=desktop)
+- Homepage loads in 0.8 seconds and weights around 62kb (uncompressed).
+- Site uncompressed size is 103.69kB.
+- 0.09g of CO2 (A+ rating) [produced every time someone visits this web page](https://www.websitecarbon.com/website/animated-sherbet-085d6f-netlify-app/).
+- 92 score on [Ecograder](https://ecograder.com/report/FoTuKN6eut3oYJmH3lA6orMS).
 
 ## Accessibility
 
-- Page content and the entire website is accessible with javascript turned off.
-- [Wave Report](https://wave.webaim.org/report#/https://www.andreatitolo.com/)
+- Page content and the entire website is accessible with javascript turned off (except for interactive slides, that needs javascript to work).
+- [Wave Report](https://wave.webaim.org/report#/https://animated-sherbet-085d6f.netlify.app).
