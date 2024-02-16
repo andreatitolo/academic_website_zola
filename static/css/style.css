@@ -4,7 +4,7 @@
 :root,
 ::backdrop {
   /* Set sans-serif & mono fonts */
-  --sans-font:  'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
+  --sans-font:  Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
   --serif-font: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   
