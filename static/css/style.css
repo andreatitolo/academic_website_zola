@@ -841,9 +841,6 @@ p > time {
 }
 
 /* bibtex code */
-section:has(.bib-data){
-  padding-bottom: 0;
-}
 .bib-data {
   background-color: var(--pre-bg);
   font-size: 0.8rem;
