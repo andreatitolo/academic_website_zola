@@ -167,6 +167,10 @@ h3 {
   line-height: 1.1;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--serif-font);
+}
+
 /* Reduce header size on mobile */
 @media only screen and (max-width: 810px) {
   h1 {
@@ -676,13 +680,13 @@ abbr[title] {
 }
 
 #profile h2 {
-  font-size: 1.95em;
+  font-size: 1.75em;
   font-weight: 300;
   margin: 20px 0 10px;
 }
 
 #profile h3 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 300;
   color: var(--text-light);
   margin: 0 0 10px;
