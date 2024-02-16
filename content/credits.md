@@ -15,3 +15,4 @@ Some deserved thanks in the form of an incomplete list (to be updated) to people
 - [Feather](https://feathericons.com/) for most of the icons used throughout the website.
 - [Simone Silvestroni](https://minutestomidnight.co.uk/) and [Matthew Graybosch](https://starbreaker.org/) for the CSP and Robots.txt/Meta tag ideas.
 - [Vivaldi Browser](https://vivaldi.com/) for inspiring the styling of the RSS feed (and [Derek Kay](https://darekkay.com) for a [blog post](https://darekkay.com/blog/rss-styling/) about it).
+- Hasmin Aziz for sharing an optmized and accesibility-friendly svgo config on [stackoverflow](https://stackoverflow.com/questions/77259756/how-can-i-safely-minify-and-optimise-svg-files/77259757#77259757)
