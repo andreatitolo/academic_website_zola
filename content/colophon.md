@@ -27,7 +27,6 @@ This site uses the following:
   - [Classical Humanist](https://github.com/system-fonts/modern-font-stacks?tab=readme-ov-file#classical-humanist) for body.
   - [Old Style](https://github.com/system-fonts/modern-font-stacks#old-style) for headings, header and footer.
   - [Monospace Code](https://github.com/system-fonts/modern-font-stacks#monospace-code) for code.
-  - As of 2023-08-29, this website uses the [Catppuccin palette](https://github.com/catppuccin/palette) palette, with some tweaks to improve legibility.
 
 ## Sustainability
 
