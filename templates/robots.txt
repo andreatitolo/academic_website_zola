@@ -1,5 +1,6 @@
 User-Agent: ChatGPT-User
 User-Agent: GPTBot
+User-Agent: anthropic-ai
 User-agent: Google-Extended
 User-agent: CCBot
 User-Agent: FacebookExternalHit
