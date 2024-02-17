@@ -11,11 +11,6 @@ to = "/talks"
 status = 301
 
 [[redirects]]
-from = "/talk/*"
-to = "/talks/:splat"
-status = 301
-
-[[redirects]]
 from = "/publication"
 to = "/publications"
 status = 301
