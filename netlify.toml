@@ -6,8 +6,8 @@ command = "zola build"
 ZOLA_VERSION = "0.18.0"
 
 [[redirects]]
-from = "/event"
-to = "/talks"
+from = "/event/"
+to = "/talks/"
 status = 301
 
 [[redirects]]
@@ -33,14 +33,14 @@ status = 301
       preload
     '''
     Content-Security-Policy = '''
-      default-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
-      style-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' data:;
-      img-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' data:;
-      script-src 'self' https://*.animated-sherbet-085d6f.netlify.app 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdnjs.cloudflare.com cdn.mathjax.org;
-      frame-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
-	    connect-src 'self' https://*.animated-sherbet-085d6f.netlify.app;
-	    base-uri 'self' https://*.animated-sherbet-085d6f.netlify.app;
-	    form-action 'self' https://*.animated-sherbet-085d6f.netlify.app;
+      default-src 'self' https://*.andreatitolo.com;
+      style-src 'self' https://*.andreatitolo.com 'unsafe-inline' data:;
+      img-src 'self' https://*.andreatitolo.com 'unsafe-inline' data:;
+      script-src 'self' https://*.andreatitolo.com 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdnjs.cloudflare.com cdn.mathjax.org;
+      frame-src 'self' https://*.andreatitolo.com;
+	    connect-src 'self' https://*.andreatitolo.com;
+	    base-uri 'self' https://*.andreatitolo.com;
+	    form-action 'self' https://*.andreatitolo.com;
       font-src 'self' data:
     '''
     Permissions-Policy = '''
