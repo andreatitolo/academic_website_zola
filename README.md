@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7f859d8b-7b79-417a-bdb5-89375d2454f1/deploy-status)](https://app.netlify.com/sites/animated-sherbet-085d6f/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f3cbcde1-4556-4ac2-8e06-bef6a25efbbe/deploy-status)](https://app.netlify.com/sites/tender-goodall-1774be/deploys)
 
 # Personal academic website
 
