@@ -2,6 +2,7 @@
 title = "Using Kart and GitHub for versioning and collaborating with spatial data in archaeological research "
 description = "Talk presented at the Archeo.FOSS17 Conference in Turin (12-13 December). Slides made with Quarto and Revealjs."
 date = "2023-12-13"
+aliases = ["/talk/using-kart-and-github-for-versioning-and-collaborating-with-spatial-data-in-archaeological-research/"]
 [taxonomies]
 tags = [
   "Open Science",

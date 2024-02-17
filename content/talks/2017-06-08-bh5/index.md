@@ -2,6 +2,7 @@
 title = "Assyrian imperial frontiers during the first millennium BC - the case of the Iraqi Middle Euphrates"
 description = "Talk and slides presented at the Broadening Horizons 5 Conference."
 date = "2017-06-08"
+aliases = ["/talk/assyrian-imperial-frontiers-during-the-first-millennium-bc-the-case-of-the-iraqi-middle-euphrates/"]
 [taxonomies]
 tags = [
   "Neo-Assyrian Kingdom",

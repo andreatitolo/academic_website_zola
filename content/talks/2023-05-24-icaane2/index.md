@@ -1,6 +1,7 @@
 +++
 title = "From the Tigris to the Euphrates banks. Post-flooding assessment at the Tishreen Dam Reservoir, North Syria."
 date = "2023-05-22"
+aliases = ["/talk/from-the-tigris-to-the-euphrates-banks.-post-flooding-assessment-at-the-tishreen-dam-reservoir-north-syria./"]
 [taxonomies]
 tags = [
   "Cultural Heritage",

@@ -2,6 +2,7 @@
 title = "Water, Landscapes and Settlements along the River. Case Studies from the Syrian Middle Euphrates"
 date = "2021-04-09"
 description = "Talk and slides presented at the XII International Congess on the Archaeology of the Ancient Near East."
+aliases = ["/talk/water-landscapes-and-settlements-along-the-river.-case-studies-from-the-syrian-middle-euphrates/"]
 [taxonomies]
 tags = [
   "Settlement Patterns",

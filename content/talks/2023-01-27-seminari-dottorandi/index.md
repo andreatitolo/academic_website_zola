@@ -2,6 +2,7 @@
 title = "Paesaggi sommersi. Metodologie di monitoraggio, prevenzione e salvaguardia dei siti a rischio del bacino della diga di Mosul, Irak. Il progetto RE-Land."
 description = "Section of a larger talk presented at the Seminar series at the University of Palermo."
 date = "2023-01-27"
+aliases = ["/talk/paesaggi-sommersi.-metodologie-di-monitoraggio-prevenzione-e-salvaguardia-dei-siti-a-rischio-del-bacino-della-diga-di-mosul-irak.-il-progetto-re-land./"]
 [taxonomies]
 tags = [
   "Cultural Heritage",

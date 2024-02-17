@@ -2,6 +2,7 @@
 title = "Monitoring Emerging Archaeological Sites Using Multitemporal NDWI - Case Studies from Iraq."
 description = "Talk and slides presented at the Banea 2020 Conference."
 date = "2020-01-10"
+aliases = ["/talk/monitoring-emerging-archaeological-sites-using-multitemporal-ndwi-case-studies-from-iraq./"]
 [taxonomies]
 tags = [
   "Cultural Heritage",

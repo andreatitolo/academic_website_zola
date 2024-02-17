@@ -2,6 +2,7 @@
 title = "Pattern Insediamentali nell'età del Ferro - il caso studio del Medio Eufrate Iracheno."
 description = "Talk and slides presented at the V Seminario della Scuola di Dottorato in Archeologia (SSDA)."
 date = "2018-01-30"
+aliases = ["/talk/pattern-insediamentali-nelleta-del-ferro-il-caso-studio-del-medio-eufrate-iracheno./"]
 [taxonomies]
 tags = [
   "Settlement Patterns",

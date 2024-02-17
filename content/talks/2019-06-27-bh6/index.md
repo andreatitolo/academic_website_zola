@@ -2,6 +2,7 @@
 title = "Archaeological Landscape of the Lower Syrian Euphrates Valley - An Integrated Approach Towards the Reconstruction of the Settlement Patterns during the Iron Age."
 description = "Talk and slides presented at the Broadening Horizons 6 Conference."
 date = "2019-06-27"
+aliases = ["/talk/archaeological-landscape-of-the-lower-syrian-euphrates-valley-an-integrated-approach-towards-the-reconstruction-of-the-settlement-patterns-during-the-iron-age./"]
 [taxonomies]
 tags = [
   "Neo-Assyrian Kingdom",

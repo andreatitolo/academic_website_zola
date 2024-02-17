@@ -2,6 +2,7 @@
 title = "Aspetti regionali della distribuzione insediativa lungo l’Eufrate nell’età del Ferro (X-VII secolo a.C.)"
 description = "Talk and slides presented at the VII Seminario della Scuola di Dottorato in Archeologia (SSDA)."
 date = "2020-02-12"
+aliases = ["/talk/aspetti-regionali-della-distribuzione-insediativa-lungo-leufrate-nelleta-del-ferro-x-vii-secolo-a.c./"]
 [taxonomies]
 tags = [ "Settlement Patterns", "Iron Age", "Euphrates River"]
 authors = [ "A. Titolo" ]

@@ -2,6 +2,7 @@
 title = "Evaluating the Potential of Cartographic and Satellite Data for Landscape Archaeology in the Area of Tell Zurghul."
 date = "2023-03-09"
 description = "Talk presented at the Mesopotamian Archaeology Conference at the University of Qadisiyah, Diwaniyeh (Iraq). Slides made with Quarto and Revealjs."
+aliases = ["/talk/evaluating-the-potential-of-cartographic-and-satellite-data-for-landscape-archaeology-in-the-area-of-tell-zurghul./"]
 [taxonomies]
 tags = [
   "Remote Sensing",

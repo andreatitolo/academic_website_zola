@@ -2,6 +2,7 @@
 title = "On the Edge of the Empire - Riverine Landscape and Settlement Patterns in the Haditha Dam Region during the Iron Age."
 description = "Talk and slides presented at the BANEA 2018 conference."
 date = "2018-03-29"
+aliases = ["/talk/on-the-edge-of-the-empire-riverine-landscape-and-settlement-patterns-in-the-haditha-dam-region-during-the-iron-age./"]
 [taxonomies]
 tags = [
   "Neo-Assyrian Kingdom",

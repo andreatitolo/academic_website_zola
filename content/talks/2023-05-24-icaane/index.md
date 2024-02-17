@@ -2,6 +2,7 @@
 title = "Normalized Difference Water Index for Cultural Heritage. A Reproducible Method for Monitoring Flooded Archaeological Sites."
 description = "Talk presented at the 13th ICAANE conference at the University of Copenhagen (Denmark). Slides made with Quarto and Revealjs."
 date = "2023-05-24"
+aliases = ["/talk/normalized-difference-water-index-for-cultural-heritage.-a-reproducible-method-for-monitoring-flooded-archaeological-sites./"]
 [taxonomies]
 tags = [
   "Cultural Heritage",
