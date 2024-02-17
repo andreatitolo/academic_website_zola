@@ -31,7 +31,7 @@ https://nicolas-hoizey.com/feeds/all.xml
             <p><strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.</p>
           </p>
           <p class="gray">
-            If you need more information about RSS feed, you can check <a href="https://alirezahayati.com/2021/09/11/what-is-rss-really-simple-syndication/">this blog post</a> To choose an app to use as a feed reader, you can look at the <a href="https://indieweb.org/feed_reader">IndieWeb Camp website</a>.
+            If you need more information about RSS feed, you can check <a href="https://alirezahayati.com/2021/09/11/what-is-rss-really-simple-syndication/">this blog post</a> or <a href="https://www.thisdaysportion.com/about/what-is-rss/">this guide</a>. To choose an app to use as a feed reader, you can look at the <a href="https://indieweb.org/feed_reader">IndieWeb Camp website</a> or the same guide linked above.
           </p>
         </nav>
         <main class="container">
@@ -41,7 +41,7 @@ https://nicolas-hoizey.com/feeds/all.xml
             </h1>
             <h2><xsl:value-of select="atom:feed/atom:title"/></h2>
             <p><xsl:value-of select="atom:feed/atom:description"/></p>
-            <p>This preview only shows titles, but the actual feed contains the full abstract if present.</p>
+            <p>This preview only shows titles, but the actual feed contains the full abstract or description if present.</p>
             <a>
               <!-- <xsl:attribute name="href">
                 <xsl:value-of select="/atom:feed/atom:link[not(@rel)]/@href"/>
