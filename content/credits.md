@@ -8,7 +8,7 @@ Some deserved thanks in the form of an incomplete list (to be updated) to people
 - [Joe Roe](https://joeroe.io) for some inspiration regarding the cv and publications page.
 - [Vincent Prouillet](https://github.com/Keats) aka Keats, for creating the Zola ssg and the Tera template engine.
 - [David Lapshin](https://daudix.codeberg.page/), creator of the [Duckquill theme](https://www.getzola.org/themes/duckquill/), for some inspiration on the post footer (actually most of the code) and for inspiring some design decisions by looking at duckquill code.
-- Adrien Faure, creator of the [Kodama theme](https://www.getzola.org/themes/kodama-theme/), for inspiration and making it easier to get some stuff from academic into Zola and the bibtex rendering code (plus the idea behind the code of the publications icons).
+- [Adrien Faure](https://adfaure.github.io), creator of the [Kodama theme](https://www.getzola.org/themes/kodama-theme/), for inspiration and making it easier to get some stuff from academic into Zola and the bibtex rendering code (plus the idea behind the code of the publications icons).
 - [Daniel Sockwell](https://www.codesections.com/) for the [Even](https://getzola.github.io/even) theme, which inspired the taxonomies single page template and style.
 - [Cydave](https://github.com/cydave) for the [Zola Papermod](https://cydave.github.io/zola-theme-papermod/) theme, which inspired the taxonomies list template, and for the social icon macro.
 - [Simpleicons](https://simpleicons.org/) for the forgejo icon.
