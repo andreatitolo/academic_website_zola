@@ -33,10 +33,10 @@
   {% endblock %}
 
   {% block rss %}
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="publications/atom.xml", trailing_slash=false) }}">
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="talks/atom.xml", trailing_slash=false) }}">
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="teaching/atom.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/atom+xml" title="All Feed" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/atom+xml" title="Publications" href="{{ get_url(path="publications/atom.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/atom+xml" title="Talks" href="{{ get_url(path="talks/atom.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/atom+xml" title="Teaching" href="{{ get_url(path="teaching/atom.xml", trailing_slash=false) }}">
     {% endblock %}
     <meta name="generator" content="Zola v.0.18">
     {% block css %}
