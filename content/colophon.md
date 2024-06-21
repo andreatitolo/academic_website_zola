@@ -17,7 +17,7 @@ This site uses the following:
 - Markdown.
 - HTML ([Validated](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandreatitolo.com)).
 - CSS ([Validated](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwww.andreatitolo.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - inspired by [Classless](https://classless.de) and [Simple CSS](https://simplecss.org/)).
-- [Code Repository on Forgejo](https://archaeo.cc/forgejo/andreatitolo/academic_website_zola).
+- [Code Repository on Codeberg](https://codeberg.org/titoloandrea/academic_website_zola).
 - Hosted on Netlify.
 
 ### Fonts and visuals
