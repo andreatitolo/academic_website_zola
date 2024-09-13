@@ -3,6 +3,6 @@ title = "Teaching"
 sort_by = "date"
 template = "teaching.html"
 page_template = "teaching-page.html"
-generate_feed = true
+generate_feeds = true
 paginate_by = 10
 +++
