@@ -10,8 +10,8 @@ tags = [
   "R",
   "Aoristic Approaches",
   "Rank-Size",
-  "Radiocarbon"
-  "Settlement Systems"
+  "Radiocarbon",
+  "Settlement Systems",
 ]
 authors = [ "A. Titolo", "A.Palmisano" ]
 [extra]
