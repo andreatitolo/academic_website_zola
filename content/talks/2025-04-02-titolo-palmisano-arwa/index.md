@@ -16,7 +16,7 @@ tags = [
 authors = [ "A. Titolo", "A.Palmisano" ]
 [extra]
 event = "ARWA Online Lecture"
-location = "Online"
+location = "Arwa Lecture - Online"
 links = [
     {url = "titolo-palmisano-arwa.html", name = "Slides", icon = "slides"},
     {url = "https://github.com/UnitoAssyrianGovernance/arwa-lecture-2025", name = "Code", icon = "code"},
