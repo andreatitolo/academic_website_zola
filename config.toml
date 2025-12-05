@@ -48,9 +48,9 @@ highlight_theme = "base16-ocean-dark"
 avatar = "img/avatar.webp"
 
 author = "A. Titolo"
-institution = "University of Turin"
+institution = "University of Bologna"
 role = "Post-Doctoral Research Associate"
-email = "andrea.titolo@unito.it"
+email = "andrea.titolo@unibo.it"
 
 footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
