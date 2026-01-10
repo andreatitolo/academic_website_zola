@@ -86,8 +86,8 @@ interests_items = [
 ]
 
 education_items = [
-    {course = "PhD in Near Eastern Archaeology", institution = "Sapienza University of Rome", year = "2019"},
-    {course = "MA in Near Eastern Archaeology", institution = "Sapienza University of Rome", year = "2016"},
+    {course = "PhD in Archaeology of Western Asia", institution = "Sapienza University of Rome", year = "2019"},
+    {course = "MA in Archaeology of Western Asia", institution = "Sapienza University of Rome", year = "2016"},
     {course = "BA in Archaeology", institution = "Sapienza University of Rome", year = "2014"},
 ]
 
